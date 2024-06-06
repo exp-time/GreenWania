@@ -50,7 +50,7 @@ function createLangButtons() {
     'src/img/fi.png'
   ];
   images.forEach((imgSrc, index) => {
-    let button = new Elem({tag:'button', attrs: {className: 'button2'}, children:[
+    let button = new Elem({tag:'button', attrs: {className: 'button'}, children:[
       {tag: 'img', attrs: {className:'lang-btns', src: imgSrc}}], parent: buttonContainer}).elem;
   });
 }
