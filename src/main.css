@@ -111,6 +111,21 @@ animate-bottom{
   
 .button:hover{color:#000!important;background-color:#ccc!important}
 
+.button2{
+  border:none;
+  padding:0.5%;
+  padding-block: 0px;
+  padding-inline: 0px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap}
+  
+.button2:hover{color:#000!important;background-color:#ccc!important}
+
 .centerimg{
   display: block;
   margin-left: auto;
