@@ -32,7 +32,7 @@ p{margin: 0;}
 .dark-grey:hover{color:#000000!important;background-color:#f1f1f1!important}
 
 /* Base font sizes for very small screens */
-.w3-third {width: 100% !important; padding: 0.5em;float:left;}
+.third {width: 100% !important; padding: 0.5em;float:left;}
 .font-small { font-size: 10px!important; }  /* Minimum readable size */
 .font-medium { font-size: 12px!important; }
 .font-large { font-size: 14px!important; }
@@ -46,7 +46,7 @@ p{margin: 0;}
 .padding-3{padding: 3%  6%!important; font-weight: 900;}
 
 @media (min-width: 1100px) {
-    .w3-third {width: 50% !important;}
+    .third {width: 50% !important;}
     .font-small { font-size: 0.5vw!important; }
     .font-medium { font-size: 0.75vw!important; }
     .font-large { font-size: 1vw!important; }
@@ -59,7 +59,7 @@ p{margin: 0;}
     .sidebar-header{padding: 2%;}
     .padding-3 {padding: 1.5%  3%!important;}}
 @media (min-width: 1650px) {
-    .w3-third {width: 33.3333% !important;}
+    .third {width: 33.3333% !important;}
     .font-small { font-size: 0.45vw!important; }
     .font-medium { font-size: 0.68vw!important; }
     .font-large { font-size: 0.9vw!important; }
@@ -132,3 +132,5 @@ animate-bottom{
   padding:0;
   outline:0;
   width:70%;}
+
+.card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}

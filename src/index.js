@@ -34,9 +34,9 @@ function createFooter(content) {
 }
 
 function createModal(id, title, content, footerContent) {
-  const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content w3-card-4 modal-animate-top'},
+  const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
     children: [headerWithClose(id, title, "modal-header font-xlarge"),
-      {tag: 'div', attrs: {className: 'w3-padding'}, children:[
+      {tag: 'div', attrs: {className: 'padding'}, children:[
         {tag: 'p', attrs: {className:'font-large',textContent:content}}]}]}).elem;
   if (footerContent && footerContent != ""){ modalContent.appendChild(createFooter(footerContent)) }
   makeDocumentModal(id, modalContent)

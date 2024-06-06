@@ -2,7 +2,7 @@ const modalData = [
   {
     id: "contact_modal",
     title: "Contact Information",
-    content: "Email: Hello (at) this domain. Currently broken!",
+    content: "",
     footerContent: "",
   },
   {
