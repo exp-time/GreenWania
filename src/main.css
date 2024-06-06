@@ -15,6 +15,9 @@ p{margin: 0;}
 .center{text-align:center!important}
 .display-topright{position:absolute;right:0;top:0}
 .display-topleft{position:absolute;right:0;top:0}
+
+.btn-container{position:absolute;right:0;top:0}
+
 .main-title{
   position: relative; 
   font-weight:400;}
