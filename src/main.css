@@ -155,7 +155,7 @@ animate-bottom{
   top: 0.5%;
   right: 0;
   margin-top: 0;
-  position: absolute;
+  position: relative;
 }
 
 .lang-btns-img{
