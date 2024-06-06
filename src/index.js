@@ -50,8 +50,8 @@ function createLangButtons() {
     'src/img/fi.png'
   ];
   images.forEach((imgSrc, index) => {
-    let button = new Elem({tag:'button',attrs:{className:`button`},children:[
-      {tag:'img',attrs:{className:'lang-btns'}, src: imgSrc}], parent: buttonContainer}).elem;
+    let button = new Elem({tag:'button',attrs:{className:`lang-btns`},children:[
+      {tag:'img',attrs:{className:'button'}, src: imgSrc}], parent: buttonContainer}).elem;
     //button.style.left = `${index * -50}px`; // Adjust the position of each button
   });
 }
