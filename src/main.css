@@ -152,10 +152,9 @@ animate-bottom{
   vertical-align: middle;
   z-index: 101;
   padding: 0.25% 0.5%;
-  top: 0.5%;
   right: 0;
   margin-top: 0;
-  position: relative;
+  position: absolute;
 }
 
 .lang-btns-img{
