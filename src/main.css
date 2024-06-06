@@ -149,7 +149,6 @@ animate-bottom{
 .card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 
 .lang-btns {
-  vertical-align: middle;
   z-index: 101;
   padding: 0.25% 0.5%;
   right: 0;
@@ -157,6 +156,7 @@ animate-bottom{
 }
 
 .lang-btns-img{
+  vertical-align: middle;
   width: 40px;
   height: 30px;
 }
