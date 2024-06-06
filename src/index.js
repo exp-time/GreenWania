@@ -52,7 +52,7 @@ function createLangButtons() {
   images.forEach((imgSrc, index) => {
     let button = new Elem({tag:'button',attrs:{className:`lang-btns`},children:[
       {tag:'img',attrs:{className:'button display-topright'}, src: imgSrc}], parent: buttonContainer}).elem;
-    button.style.right = `${index * 50}px`; // Adjust the position of each button
+    button.style.left = `${index * 50}px`; // Adjust the position of each button
   });
 }
 
