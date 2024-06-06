@@ -93,7 +93,7 @@ animate-bottom{
 }@keyframes animatebottom{
   from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 
-.Button{
+.button{
   border:none;
   display:inline-block;
   padding:inherit;
