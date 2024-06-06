@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dsmoejle/repositories/GreenWania
-    - index.html $DEPLOYPATH
-    - -R src $DEPLOYPATH
+    - export DEPLOYPATH=/home/dsmoejle/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
