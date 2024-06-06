@@ -1,5 +1,5 @@
 
-body {display:block;margin:0;font-family: Arial, sans-serif;}
+html,body {display:block;margin:0;font-family: Arial, sans-serif;height: 100%;}
 p{margin: 0;}
 
 .theme {color:#ffffff !important; background-color:#28790f !important;}
