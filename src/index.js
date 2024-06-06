@@ -14,14 +14,14 @@ function makeDocumentModal(id, content) {
 }
 
 function headerWithClose(id, title, style) {
-  return new Elem({tag:'header',attrs:{className:`w3-theme-l1 ${style}`},children:[
+  return new Elem({tag:'header',attrs:{className:`theme-l1 ${style}`},children:[
     {tag:'p',attrs:{textContent:title}},
     {tag:'div',attrs:{className:'button display-topright',onclick:()=>info_close(id)},children:[
       {tag:'i',attrs:{className:'fa fa-remove'}}]}]}).elem;
 }
 
 function createFooter(content) {
-  const footer = new Elem({tag: 'footer', attrs: {className: 'w3-theme-l1 modal-footer font-medium'}}).elem;
+  const footer = new Elem({tag: 'footer', attrs: {className: 'theme-l1 modal-footer font-medium'}}).elem;
   if (typeof content === 'object' && !(content instanceof Array)) {
     for (const key in content) { // If footerContent is an object (not an array), handle as key-value pairs for links
       new Elem({tag: 'p', attrs: {className: 'font-medium'}, children:[

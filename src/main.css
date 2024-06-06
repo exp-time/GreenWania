@@ -2,6 +2,8 @@
 body {display:block;margin:0;font-family: Arial, sans-serif;}
 
 .theme {color:#ffffff !important; background-color:#28790f !important;}
+.theme-l1 {color:#ffffff !important; background-color:#333333 !important}
+
 
 .padding{padding:8px 16px!important}
 .padding-3{padding: 3%  6%!important; font-weight: 900;}
@@ -10,6 +12,7 @@ body {display:block;margin:0;font-family: Arial, sans-serif;}
 .upShadow {box-shadow:0 -4px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 
 .center{text-align:center!important}
+.display-topright{position:absolute;right:0;top:0}
 
 .main-title{
   position: relative; 
