@@ -145,10 +145,10 @@ animate-bottom{
 
 .lang-btns{
   z-index: 101;
-  padding:0.25% 0.5%;
-  top:0.5%;
-  right:0;
-  margin-top:0;
+  padding:0.5% 0.5%;
+  top:2%;
+  right:2%;
+  margin:0;
   width: 24px;
   height: 24px;
 }
