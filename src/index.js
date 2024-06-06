@@ -42,11 +42,23 @@ function createModal(id, title, content, footerContent) {
   makeDocumentModal(id, modalContent)
 }
 
-
+function createLangButtons() {
+  const buttonContainer = document.getElementById('button-container');
+  // Image URLs (replace with your actual image paths)
+  const images = [
+    'src/img/en.png',
+    'src/img/fi.png'
+  ];
+  images.forEach((imgSrc, index) => {
+    let button = new Elem({tag:'button',attrs:{className:`lang-btns`},children:[
+      {tag:'img',attrs:{className:'button display-topright'}, src: imgSrc}], parent: buttonContainer}).elem;
+    button.style.right = `${index * 50}px`; // Adjust the position of each button
+  });
+}
 
 document.addEventListener('DOMContentLoaded', function() { 
   modalData.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
-  
+  createLangButtons();
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
