@@ -58,7 +58,7 @@ function createLangButtons() {
       {tag: 'img', attrs: {className:'lang-btns-img', src: imgSrc}}], parent: buttonContainer}).elem;
     button.style.right = `${index * 50}px`;
     button.addEventListener('click', () => {
-      lang = imgData.lang;
+      lang = imgSrc.lang;
       console.log(`Language changed to: ${lang}`);
     });
   });
