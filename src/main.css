@@ -164,3 +164,9 @@ animate-bottom{
   width: 40px;
   height: 30px;
 }
+
+
+::-webkit-scrollbar {width: 10px;}                    
+::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 /* Does not work */
+::-webkit-scrollbar-thumb {background: #888;border-radius: 20px;}     /* Barely works */ 
+::-webkit-scrollbar-thumb:hover {background: #555;} 
