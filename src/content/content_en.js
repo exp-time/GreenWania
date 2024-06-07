@@ -1,4 +1,4 @@
-const modalDataEn = [
+const modalDataEN = [
   {
     id: "contact_modal",
     title: "Contact Information",

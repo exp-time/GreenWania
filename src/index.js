@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
   } else if (lang==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
-
   createLangButtons();
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
