@@ -7,7 +7,7 @@ const modalDataFI = [
   },
   {
     id: "about_modal",
-    title: "Tieto-osio",
+    title: "Tietoja",
     content: "",
     footerContent: ""
   },

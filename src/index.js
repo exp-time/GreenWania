@@ -48,6 +48,8 @@ function changeLang(language) {
   lang = language
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
+
+  document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   } else if (lang==="fi") {

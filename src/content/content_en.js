@@ -7,7 +7,7 @@ const modalDataEN = [
   },
   {
     id: "about_modal",
-    title: "About section",
+    title: "About Section",
     content: "",
     footerContent: ""
   },
