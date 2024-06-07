@@ -18,3 +18,8 @@ const modalData = [
     footerContent: "",  
   },
 ];
+
+const texts = {
+  #contact:  "Yhteyslomake",
+  #about: "Tietoja",
+};
