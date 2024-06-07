@@ -167,6 +167,6 @@ animate-bottom{
 
 
 ::-webkit-scrollbar {width: 10px;}                    
-::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 /* Does not work */
-::-webkit-scrollbar-thumb {background: #b1b1b1;border-radius: 20px;}     /* Barely works */ 
+::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
+::-webkit-scrollbar-thumb {background: #b1b1b1;border-radius: 20px;}     
 ::-webkit-scrollbar-thumb:hover {background: #5af355;} 
