@@ -53,7 +53,7 @@ function createLangButtons() {
   ];
   images.forEach((imgSrc, index) => {
     let button = new Elem({tag:'button', attrs: {className: 'lang-btns',onclick:()=>lang=imgSrc.lang}, children:[
-      {tag: 'img', attrs: {className:'lang-btns-img', src: imgSrc}}], parent: buttonContainer}).elem;
+      {tag: 'img', attrs: {className:'lang-btns-img', src: imgSrc.src}}], parent: buttonContainer}).elem;
     button.style.right = `${index * 50}px`;
   });
 }
