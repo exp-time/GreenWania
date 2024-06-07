@@ -44,8 +44,6 @@ function createModal(id, title, content, footerContent) {
   makeDocumentModal(id, modalContent)
 }
 
-let lang = "en"
-
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
   // Image URLs (replace with your actual image paths)
@@ -54,13 +52,9 @@ function createLangButtons() {
     { src: 'src/img/fi.png', lang: 'fi' }
   ];
   images.forEach((imgSrc, index) => {
-    let button = new Elem({tag:'button', attrs: {className: 'lang-btns'}, children:[
+    let button = new Elem({tag:'button', attrs: {className: 'lang-btns',onclick:()=>lang=imgSrc.lang}, children:[
       {tag: 'img', attrs: {className:'lang-btns-img', src: imgSrc}}], parent: buttonContainer}).elem;
     button.style.right = `${index * 50}px`;
-    button.addEventListener('click', () => {
-      lang = imgSrc.lang;
-      console.log(`Language changed to: ${lang}`);
-    });
   });
 }
 
