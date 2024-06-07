@@ -44,6 +44,17 @@ function createModal(id, title, content, footerContent) {
   makeDocumentModal(id, modalContent)
 }
 
+function changeLang(language) {
+  lang = language
+  setButtonText('contactButton', '#contact');
+  setButtonText('aboutButton', '#about');
+  if (lang==="en") {
+    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
+  } else if (lang==="fi") {
+    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
+  }
+}
+
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
   // Image URLs (replace with your actual image paths)
@@ -52,22 +63,15 @@ function createLangButtons() {
     { src: 'src/img/fi.png', lang: 'fi' }
   ];
   images.forEach((imgSrc, index) => {
-    let button = new Elem({tag:'button', attrs: {className: 'lang-btns',onclick:()=>lang=imgSrc.lang}, children:[
+    let button = new Elem({tag:'button', attrs: {className: 'lang-btns',onclick:()=>changeLang(imgSrc.lang)}, children:[
       {tag: 'img', attrs: {className:'lang-btns-img', src: imgSrc.src}}], parent: buttonContainer}).elem;
     button.style.right = `${index * 50}px`;
   });
 }
 
 document.addEventListener('DOMContentLoaded', function() { 
-  setButtonText('contactButton', '#contact');
-  setButtonText('aboutButton', '#about');
-  console.log(lang)
-  if (lang==="en") {
-    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
-  } else if (lang==="fi") {
-    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
-  }
   createLangButtons();
+  changeLang(lang)
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
