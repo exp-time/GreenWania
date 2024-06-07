@@ -1,4 +1,4 @@
-const modalData = [
+const modalDataEn = [
   {
     id: "contact_modal",
     title: "Contact Information",
@@ -19,7 +19,7 @@ const modalData = [
   },
 ];
 
-const texts = {
+const textsEN = {
   #contact:  "Contact Form",
   #about: "About",
 };

@@ -1,5 +1,7 @@
 let isString = value => typeof value === 'string';
 
+let lang = "en"
+
 function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
 function openInNewTab(url) {window.open(url, '_blank').focus()}
@@ -62,4 +64,26 @@ document.addEventListener('DOMContentLoaded', function() {
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
- });
+});
+
+function getText(identifier, lang) {
+  if (lang==="en") {
+    return textsEN[identifier] || 'Default Text, ERROR';
+  } else if (lang==="fi") {
+    return textsFI[identifier] || 'Default Text, ERROR';
+  }
+}
+
+function setButtonText(buttonId, textIdentifier) {
+  const button = document.getElementById(buttonId);
+  if (button) {
+    button.textContent = getText(textIdentifier, lang);
+  } else {
+    console.error(`Button with ID ${buttonId} not found.`);
+  }
+}
+
+window.onload = function() {
+  setButtonText('contactButton', '#contact');
+  setButtonText('aboutButton', '#about');
+};
