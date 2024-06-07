@@ -59,11 +59,13 @@ function createLangButtons() {
 }
 
 document.addEventListener('DOMContentLoaded', function() { 
+  console.log(lang)
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   } else if (lang==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
+
   createLangButtons();
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
