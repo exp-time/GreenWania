@@ -1,20 +1,20 @@
 const modalData = [
   {
     id: "contact_modal",
-    title: "Contact Information",
+    title: "Kontaktilomake",
     content: "",
     footerContent: "",
   },
   {
     id: "about_modal",
-    title: "About section",
+    title: "Tieto-osio",
     content: "",
     footerContent: ""
   },
   {
     id: "unfinished_modal",
-    title: "Site Under Construction",
-    content: "The site is under construction. Contents subject to major change.",
+    title: "Sivustoa Rakennetaan",
+    content: "Tähän rakennetaan Green Wanian kotisivuja. Sisältö väliaikaista.",
     footerContent: "",  
   },
 ];

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>GreenWania</title>
+<title>Green Wania</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="src/main.css">
@@ -10,24 +10,21 @@
 <script type="text/javascript" src="src/content/dynContent_en.js"></script>
 <script src="https://kit.fontawesome.com/3b09af5c91.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
 </head>
 <body>
   <header class="theme padding user-select-none downShadow" id="myHeader">
     <div class="btn-container" id="button-container"></div>
     <div class="center main-title font-jumbo animate-bottom">GreenWania</div>
   </header>
-
   <div class="content padding-3 user-select-none">
     <img src="src/img/image.png" class="centerimg">
   </div>
-  
   <footer class="theme user-select-none upShadow">
     <div class="center padding-3">
-      <button class="button font-xlarge dark-grey" onclick="info_open('contact_modal')">Contact</button>
-      <button class="button font-xlarge dark-grey" onclick="info_open('about_modal')">About</button>
+      <button class="button font-xlarge dark-grey" onclick="info_open('contact_modal')">{{getText "#ContactForm"}}</button>
+      <button class="button font-xlarge dark-grey" onclick="info_open('about_modal')">{{getText "#About"}}</button>
     </div>
+
   </footer>
 </body>
 </html>
