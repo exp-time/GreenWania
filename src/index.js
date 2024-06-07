@@ -59,6 +59,8 @@ function createLangButtons() {
 }
 
 document.addEventListener('DOMContentLoaded', function() { 
+  setButtonText('contactButton', '#contact');
+  setButtonText('aboutButton', '#about');
   console.log(lang)
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -88,8 +90,3 @@ function setButtonText(buttonId, textIdentifier) {
     console.error(`Button with ID ${buttonId} not found.`);
   }
 }
-
-window.onload = function() {
-  setButtonText('contactButton', '#contact');
-  setButtonText('aboutButton', '#about');
-};
