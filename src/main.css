@@ -176,6 +176,7 @@ animate-bottom{
 
 .navbar-style {
   width:100%;
+  overflow: hidden;
 }
 
 .navbar-style > div {
