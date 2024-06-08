@@ -31,7 +31,7 @@ const infoBoxFI = {
 }
 
 const tabsFI = {
-  one: "Yksi",
-  two: "Kaksi",
-  three: "Kolme",
+  tabOne: "Yksi",
+  tabTwo: "Kaksi",
+  tabThree: "Kolme",
 }
