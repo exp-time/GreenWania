@@ -17,12 +17,9 @@ class Elem {
     for (const attr in attributes) {
       if (attr.startsWith('on') && typeof attributes[attr] === 'function') {
         this.elem.addEventListener(attr.substring(2), attributes[attr]);
-      } else if (attr === "required") {
-        this.elem[attr] = attr;
       } else {
         this.elem[attr] = attributes[attr];
       }
-
     }
     return this;
   }
