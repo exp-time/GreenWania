@@ -179,7 +179,7 @@ animate-bottom{
 }
 
 .navbar-style > div {
-
+  display:inline-block;
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
