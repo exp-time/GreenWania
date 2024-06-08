@@ -37,20 +37,21 @@ function createFooter(content) {
 }
 
 function createModal(id, title, content, footerContent) {
+  let modalContent;
   if (id === "contact_modal") {
-    const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
+    modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
       children: [headerWithClose(id, title, "modal-header font-xlarge"),
         {tag: 'form', attrs: {className: 'contact-form'}, children:[
           {tag: 'label', attrs: {for:'name', textContent:"Name"}},
-          {tag: 'input', attrs: {type:"text", id:'name', name="name", placeholder:"Your name.."}},
+          {tag: 'input', attrs: {type:"text", id:'name', name="name", placeholder:"Your name..", required: true}},
           {tag: 'label', attrs: {for:'email', textContent:"Email"}},
-          {tag: 'input', attrs: {type:"email", id:'email', name="email", placeholder:"Your email.."}},
+          {tag: 'input', attrs: {type:"email", id:'email', name="email", placeholder:"Your email..", required: true}},
           {tag: 'label', attrs: {for:'message', textContent:"Message"}},
-          {tag: 'textarea', attrs: {id:'message', name="message", placeholder:"Write a message.."}},
+          {tag: 'textarea', attrs: {id:'message', name="message", placeholder:"Write a message..", required: true}},
           {tag: 'button', attrs: {type:"submit", className:"button dark-green"}}
         ]}]}).elem;
   } else {
-    const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
+    modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
       children: [headerWithClose(id, title, "modal-header font-xlarge"),
         {tag: 'div', attrs: {className: 'padding'}, children:[
           {tag: 'p', attrs: {className:'font-large',textContent:content}}]}]}).elem;
