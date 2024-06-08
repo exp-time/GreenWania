@@ -31,7 +31,7 @@ const infoBoxFI = {
 }
 
 const tabsFI = {
-  tabOne: "Yksi",
-  tabTwo: "Kaksi",
-  tabThree: "Kolme",
+  tabOne: "Kuva Yksi",
+  tabTwo: "Kuva Kaksi",
+  tabThree: "Kuva Kolme",
 }
