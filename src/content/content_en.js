@@ -20,6 +20,8 @@ const modalDataEN = [
 ];
 
 const textsEN = {
-  '#contact':  "Contact Form",
-  '#about': "About",
+  '#contact':  'Contact Form',
+  '#about': 'About',
+  '#address': 'Adress',
+  '#businessID': 'Business ID',
 };

@@ -20,6 +20,8 @@ const modalDataFI = [
 ];
 
 const textsFI = {
-  '#contact':  "Yhteyslomake",
-  '#about': "Tietoja",
+  '#contact':  'Yhteyslomake',
+  '#about': 'Tietoja',
+  '#address': 'Postiosoite',
+  '#businessID': 'Y-tunnus',
 };
