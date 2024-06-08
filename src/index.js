@@ -72,6 +72,7 @@ function createLangButtons() {
 }
 
 function genContent(parentELement, content) {
+  console.log(content)
   if (typeof content === 'string') {
     new Elem({tag: 'p', attrs: {className: 'font-medium',textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
@@ -83,10 +84,9 @@ function genContent(parentELement, content) {
 
 function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV').innerHTML = ''
-  console.log(adressElem)
-  if (lang==="en") {
+  if (lang === "en") {
     genContent(adressElem, infoBoxEN);
-  } else if (lang==="fi") {
+  } else if (lang === "fi") {
     genContent(adressElem, infoBoxFI)
   }
 }
