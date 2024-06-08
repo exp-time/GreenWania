@@ -83,6 +83,7 @@ function genContent(parentELement, content, tag) {
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
 
+
 function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV')
   adressElem.innerHTML = ''
@@ -97,9 +98,9 @@ function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
   if (lang === "en") {
-    genContent(navElem, tabsEN, 'div');
+    genContent(navElem, tabsEN, 'button');
   } else if (lang === "fi") {
-    genContent(navElem, tabsFI, 'div')
+    genContent(navElem, tabsFI, 'button')
   }
 }
 
