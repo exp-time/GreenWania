@@ -176,11 +176,11 @@ animate-bottom{
 
 .navbar-style {
   width:100%;
-  flex-direction: row !important;
   flex: 1;
 }
 
 .navbar-style > div {
+  flex-direction: row !important;
   flex: 1;
 }
 
