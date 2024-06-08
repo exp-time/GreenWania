@@ -77,7 +77,7 @@ function genContent(parentELement, content, tag, classList) {
     new Elem({tag: tag, attrs: {className: classList,textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: tag, attrs: {className: classList,textContent: value, id: key}, parent: parentELement});
+      new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value}, parent: parentELement});
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
@@ -97,9 +97,9 @@ function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
   if (lang === "en") {
-    genContent(navElem, tabsEN, 'button', 'font-large dark-green');
+    genContent(navElem, tabsEN, 'button', 'button font-large dark-green');
   } else if (lang === "fi") {
-    genContent(navElem, tabsFI, 'button', 'font-large dark-green')
+    genContent(navElem, tabsFI, 'button', 'button font-large dark-green')
   }
 }
 
