@@ -2,7 +2,7 @@
 html,body {display:flex;margin:0;font-family: Arial, sans-serif;height: 100%; flex-direction: column;}
 p{margin: 0;}
 
-.theme {color:#ffffff !important; background-color:#28790f !important;}
+.theme {color:#ffffff !important; background-color:#3b961f !important;}
 .theme-l1 {color:#ffffff !important; background-color:#333333 !important}
 .content {flex: 1;}
 
@@ -43,6 +43,9 @@ p{margin: 0;}
 
 .dark-grey{color:#ffffff!important;background-color:#616161!important}
 .dark-grey:hover{color:#000000!important;background-color:#f1f1f1!important}
+
+.dark-green{color:#ffffff!important;background-color:#0c4d09!important}
+.dark-green:hover{color:#000000!important;background-color:#48bd44!important}
 
 /* Base font sizes for very small screens */
 .third {width: 100% !important; padding: 0.5em;float:left;}
