@@ -181,7 +181,7 @@ animate-bottom{
 }
 
 .navbar-style > div {
-  background-color: yellow;
+  flex: 1;
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
