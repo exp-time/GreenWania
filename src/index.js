@@ -61,6 +61,7 @@ function changeLang(language) {
 }
 
 function changeTab(tab) {
+  if (currentTab === tab) {return}
   currentTab = tab
   console.log(currentTab)
   const contentContainer = document.getElementById('content');
