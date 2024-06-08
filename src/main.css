@@ -20,7 +20,7 @@ p{margin: 0;}
 
 .display-topright{position:absolute;right:0;top:0}
 .display-topleft{position:absolute;left:0;top:0}
-.display-topleft{position:absolute;left:0}
+.display-left{position:absolute;left:0}
 
 .btn-container{
   position:absolute;
