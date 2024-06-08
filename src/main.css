@@ -175,7 +175,7 @@ animate-bottom{
 }
 
 .contact-form {
-  
+
 }
 
 .navbar-style {
@@ -186,7 +186,10 @@ animate-bottom{
   
 }
 
-::-webkit-scrollbar {width: 10px;}                    
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0;
+}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
 ::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     
 ::-webkit-scrollbar-thumb:hover {background: #48bd44;} 
