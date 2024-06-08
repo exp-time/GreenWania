@@ -52,7 +52,6 @@ function changeLang(language) {
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
   createAddress(lang);
-  
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -65,6 +64,7 @@ function changeTab(tab) {
   currentTab = tab
   console.log(currentTab)
   const contentContainer = document.getElementById('content');
+  contentContainer.innerHTML = ''
   if (currentTab === "tabOne") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/image.png"}, parent: contentContainer});
   }
