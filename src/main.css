@@ -176,12 +176,10 @@ animate-bottom{
 
 .navbar-style {
   width:100%;
-  flex: 1;
 }
 
 .navbar-style > div {
-  flex-direction: row !important;
-  flex: 1;
+
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
