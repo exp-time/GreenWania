@@ -46,10 +46,12 @@ function createModal(id, title, content, footerContent) {
 
 function changeLang(language) {
   lang = language
+  createNav(lang)
+  createMainContent()
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
   createAddress(lang);
-  createNav(lang)
+  
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -82,6 +84,9 @@ function genContent(parentELement, content, tag, classList) {
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
 
+function genMainContent() {
+  
+}
 
 function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV')
@@ -91,6 +96,10 @@ function createAddress(lang) {
   } else if (lang === "fi") {
     genContent(adressElem, infoBoxFI, 'p', 'font-large')
   }
+}
+
+function createMainContent() {
+  
 }
 
 function createNav(lang) {
