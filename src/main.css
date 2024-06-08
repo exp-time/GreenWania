@@ -171,7 +171,7 @@ animate-bottom{
 }
 
 .lang-btns-img:hover {
-  filter: contrast(0.5);
+  filter: contrast(0.3);
 }
 
 .navbar-style {
