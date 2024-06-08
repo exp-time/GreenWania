@@ -48,7 +48,7 @@ function createModal(id, title, content, footerContent) {
 function changeLang(language) {
   lang = language
   createNav(lang)
-  changeTab(currentTab)
+  changeTab(currentTab, true)
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
   createAddress(lang);
@@ -60,8 +60,8 @@ function changeLang(language) {
   }
 }
 
-function changeTab(tab) {
-  if (currentTab === tab) {return}
+function changeTab(tab, init) {
+  if (currentTab === tab || init) {return}
   currentTab = tab
   console.log(currentTab)
   const contentContainer = document.getElementById('content');
