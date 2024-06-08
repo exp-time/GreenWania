@@ -76,9 +76,8 @@ function genContent(parentELement, content, tag, classList) {
   if (typeof content === 'string') {
     new Elem({tag: tag, attrs: {className: classList,textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
-    console.log(content)
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: tag, attrs: {className: classList,textContent: value}, parent: parentELement});
+      new Elem({tag: tag, attrs: {className: classList,textContent: value, id: key}, parent: parentELement});
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
