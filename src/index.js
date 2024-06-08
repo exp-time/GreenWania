@@ -83,6 +83,7 @@ function genContent(parentELement, content) {
 
 function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV').innerHTML = ''
+  console.log(adressElem)
   if (lang==="en") {
     genContent(adressElem, infoBoxEN);
   } else if (lang==="fi") {
