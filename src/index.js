@@ -64,6 +64,11 @@ function changeLang(language) {
 function changeTab(tab) {
   currentTab = tab
   console.log(currentTab)
+  const contentContainer = document.getElementById('content');
+  if (currentTab === "tabOne") {
+
+    <img src="src/img/image.png" class="centerimg"></img>
+  }
 }
 
 function createLangButtons() {
