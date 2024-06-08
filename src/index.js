@@ -1,6 +1,7 @@
 let isString = value => typeof value === 'string';
 
 let lang = "en"
+let currentTab = "tabOne"
 
 function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
@@ -60,6 +61,11 @@ function changeLang(language) {
   }
 }
 
+function changeTab(tab) {
+  currentTab = tab
+  
+}
+
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
   // Image URLs (replace with your actual image paths)
@@ -79,7 +85,12 @@ function genContent(parentELement, content, tag, classList) {
     new Elem({tag: tag, attrs: {className: classList,textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value}, parent: parentELement});
+      if (tag === "button") {
+        new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value, onclick:()=>changeTab(key)}, parent: parentELement});
+      }
+      else {
+        new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value}, parent: parentELement});
+      }
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
