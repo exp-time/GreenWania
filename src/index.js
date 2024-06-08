@@ -63,7 +63,7 @@ function changeLang(language) {
 
 function changeTab(tab) {
   currentTab = tab
-  
+  console.log(currentTab)
 }
 
 function createLangButtons() {
