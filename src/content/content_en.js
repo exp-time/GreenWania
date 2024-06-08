@@ -29,3 +29,7 @@ const infoBoxEN = {
   p2 : 'Address: Alhonniementie 111, 37200 Siuro',
   p3 : 'Business ID: 2564882-3',
 }
+
+const tabsEN = {
+  
+}
