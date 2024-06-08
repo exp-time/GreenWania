@@ -73,11 +73,11 @@ function createLangButtons() {
 
 function genContent(parentELement, content) {
   if (typeof content === 'string') {
-    new Elem({tag: 'p', attrs: {className: 'font-medium',textContent: content}, parent: parentELement});
+    new Elem({tag: 'p', attrs: {className: 'font-large',textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
     console.log(content)
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: 'p', attrs: {className: 'font-medium',textContent: value}, parent: parentELement});
+      new Elem({tag: 'p', attrs: {className: 'font-large',textContent: value}, parent: parentELement});
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
