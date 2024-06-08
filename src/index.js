@@ -72,13 +72,13 @@ function createLangButtons() {
   });
 }
 
-function genContent(parentELement, content, tag) {
+function genContent(parentELement, content, tag, classList) {
   if (typeof content === 'string') {
-    new Elem({tag: tag, attrs: {className: 'font-large',textContent: content}, parent: parentELement});
+    new Elem({tag: tag, attrs: {className: classList,textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
     console.log(content)
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: tag, attrs: {className: 'font-large',textContent: value}, parent: parentELement});
+      new Elem({tag: tag, attrs: {className: classList,textContent: value}, parent: parentELement});
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
@@ -88,9 +88,9 @@ function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV')
   adressElem.innerHTML = ''
   if (lang === "en") {
-    genContent(adressElem, infoBoxEN, 'p');
+    genContent(adressElem, infoBoxEN, 'p', 'font-large');
   } else if (lang === "fi") {
-    genContent(adressElem, infoBoxFI, 'p')
+    genContent(adressElem, infoBoxFI, 'p', 'font-large')
   }
 }
 
@@ -98,9 +98,9 @@ function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
   if (lang === "en") {
-    genContent(navElem, tabsEN, 'button');
+    genContent(navElem, tabsEN, 'button', 'font-large dark-green');
   } else if (lang === "fi") {
-    genContent(navElem, tabsFI, 'button')
+    genContent(navElem, tabsFI, 'button', 'font-large dark-green')
   }
 }
 
