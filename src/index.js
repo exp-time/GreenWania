@@ -66,7 +66,11 @@ function changeTab(tab) {
   const contentContainer = document.getElementById('content');
   contentContainer.innerHTML = ''
   if (currentTab === "tabOne") {
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/image.png"}, parent: contentContainer});
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
+  } else if (currentTab === "tabTwo") {
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_2.jpeg"}, parent: contentContainer});
+  } else if (currentTab === "tabThree") {
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg"}, parent: contentContainer});
   }
 }
 
