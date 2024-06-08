@@ -72,13 +72,13 @@ function createLangButtons() {
   });
 }
 
-function genContent(parentELement, content) {
+function genContent(parentELement, content, tag) {
   if (typeof content === 'string') {
-    new Elem({tag: 'p', attrs: {className: 'font-large',textContent: content}, parent: parentELement});
+    new Elem({tag: tag, attrs: {className: 'font-large',textContent: content}, parent: parentELement});
   } else if (typeof content === 'object') { 
     console.log(content)
     for (const [key, value] of Object.entries(content)) { 
-      new Elem({tag: 'p', attrs: {className: 'font-large',textContent: value}, parent: parentELement});
+      new Elem({tag: tag, attrs: {className: 'font-large',textContent: value}, parent: parentELement});
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
 }
@@ -87,9 +87,9 @@ function createAddress(lang) {
   let adressElem = document.getElementById('addressDIV')
   adressElem.innerHTML = ''
   if (lang === "en") {
-    genContent(adressElem, infoBoxEN);
+    genContent(adressElem, infoBoxEN, 'p');
   } else if (lang === "fi") {
-    genContent(adressElem, infoBoxFI)
+    genContent(adressElem, infoBoxFI, 'p')
   }
 }
 
@@ -97,9 +97,9 @@ function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
   if (lang === "en") {
-    genContent(navElem, tabsEN);
+    genContent(navElem, tabsEN, 'div');
   } else if (lang === "fi") {
-    genContent(navElem, tabsFI)
+    genContent(navElem, tabsFI, 'div')
   }
 }
 
