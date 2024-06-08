@@ -25,7 +25,7 @@ const textsEN = {
 };
 
 const infoBoxEN = {
-  'p1' : 'Green Wania, Subsidiary of Paceville Oy',
-  'p2' : 'Address: Alhonniementie 111, 37200 Siuro',
-  'p3' : 'Business ID: 2564882-3',
+  p1 : 'Green Wania, Subsidiary of Paceville Oy',
+  p2 : 'Address: Alhonniementie 111, 37200 Siuro',
+  p3 : 'Business ID: 2564882-3',
 }

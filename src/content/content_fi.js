@@ -25,7 +25,7 @@ const textsFI = {
 };
 
 const infoBoxFI = {
-  'p1' : 'Green Wania, Paceville Oy:n aputoiminimi',
-  'p2' : 'Postiosoite: Alhonniementie 111, 37200 Siuro',
-  'p3' : 'Y-tunnus: 2564882-3',
+  p1 : 'Green Wania, Paceville Oy:n aputoiminimi',
+  p2 : 'Postiosoite: Alhonniementie 111, 37200 Siuro',
+  p3 : 'Y-tunnus: 2564882-3',
 }
