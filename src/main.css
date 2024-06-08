@@ -177,6 +177,7 @@ animate-bottom{
 .navbar-style {
   width:100%;
   overflow:hidden;
+  flex: 1;
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
