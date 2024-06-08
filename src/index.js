@@ -48,7 +48,7 @@ function createModal(id, title, content, footerContent) {
 function changeLang(language) {
   lang = language
   createNav(lang)
-  createMainContent()
+  changeTab(currentTab)
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
   createAddress(lang);
@@ -97,10 +97,6 @@ function genContent(parentELement, content, tag, classList) {
       }
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
-}
-
-function genMainContent() {
-  
 }
 
 function createAddress(lang) {
