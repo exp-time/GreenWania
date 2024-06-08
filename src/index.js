@@ -49,6 +49,7 @@ function changeLang(language) {
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
   createAddress(lang);
+  createNav(lang)
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -89,6 +90,16 @@ function createAddress(lang) {
     genContent(adressElem, infoBoxEN);
   } else if (lang === "fi") {
     genContent(adressElem, infoBoxFI)
+  }
+}
+
+function createNav(lang) {
+  let navElem = document.getElementById('navbar')
+  navElem.innerHTML = ''
+  if (lang === "en") {
+    genContent(navElem, tabsEN);
+  } else if (lang === "fi") {
+    genContent(navElem, tabsFI)
   }
 }
 

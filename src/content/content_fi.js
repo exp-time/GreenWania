@@ -29,3 +29,9 @@ const infoBoxFI = {
   p2 : 'Postiosoite: Alhonniementie 111, 37200 Siuro',
   p3 : 'Y-tunnus: 2564882-3',
 }
+
+const tabsFI = {
+  one: "Yksi",
+  two: "Kaksi",
+  three: "Kolme",
+}

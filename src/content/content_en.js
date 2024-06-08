@@ -31,5 +31,7 @@ const infoBoxEN = {
 }
 
 const tabsEN = {
-  
+  one: "one",
+  two: "two",
+  three: "three",
 }
