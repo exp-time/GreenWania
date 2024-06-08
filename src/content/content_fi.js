@@ -8,7 +8,7 @@ const modalDataFI = [
   {
     id: "about_modal",
     title: "Tietoja",
-    content: "",
+    content: "kaj@greenwania.com, tommi@greenwania.com",
     footerContent: ""
   },
   {

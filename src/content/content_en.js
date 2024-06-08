@@ -8,7 +8,7 @@ const modalDataEN = [
   {
     id: "about_modal",
     title: "About Section",
-    content: "",
+    content: "kaj@greenwania.com, tommi@greenwania.com",
     footerContent: ""
   },
   {
@@ -27,3 +27,4 @@ const textsEN = {
   '#address': 'Address: Alhonniementie 111, 37200 Siuro',
   '#businessID': 'Business ID: 2564882-3',
 };
+
