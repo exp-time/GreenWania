@@ -66,8 +66,7 @@ function changeTab(tab) {
   console.log(currentTab)
   const contentContainer = document.getElementById('content');
   if (currentTab === "tabOne") {
-
-    <img src="src/img/image.png" class="centerimg"></img>
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/image.png"}, parent: contentContainer});
   }
 }
 
