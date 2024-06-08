@@ -37,11 +37,26 @@ function createFooter(content) {
 }
 
 function createModal(id, title, content, footerContent) {
-  const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
-    children: [headerWithClose(id, title, "modal-header font-xlarge"),
-      {tag: 'div', attrs: {className: 'padding'}, children:[
-        {tag: 'p', attrs: {className:'font-large',textContent:content}}]}]}).elem;
-  if (footerContent && footerContent != ""){ modalContent.appendChild(createFooter(footerContent)) }
+  if (id === "contact_modal") {
+    const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
+      children: [headerWithClose(id, title, "modal-header font-xlarge"),
+        {tag: 'form', attrs: {className: 'contact-form'}, children:[
+          {tag: 'label', attrs: {for:'name', textContent:"Name"}},
+          {tag: 'input', attrs: {type:"text", id:'name', name="name", placeholder:"Your name..", required}},
+          {tag: 'label', attrs: {for:'email', textContent:"Email"}},
+          {tag: 'input', attrs: {type:"email", id:'email', name="email", placeholder:"Your email..", required}},
+          {tag: 'label', attrs: {for:'message', textContent:"Message"}},
+          {tag: 'textarea', attrs: {id:'message', name="message", placeholder:"Write a message..", required}},
+          {tag: 'button', attrs: {type:"submit", className:"button dark-green"}}
+        ]}]}).elem;
+  } else {
+    const modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
+      children: [headerWithClose(id, title, "modal-header font-xlarge"),
+        {tag: 'div', attrs: {className: 'padding'}, children:[
+          {tag: 'p', attrs: {className:'font-large',textContent:content}}]}]}).elem;
+    if (footerContent && footerContent != ""){ modalContent.appendChild(createFooter(footerContent)) }
+  }
+
   makeDocumentModal(id, modalContent)
 }
 
@@ -58,6 +73,10 @@ function changeLang(language) {
   } else if (lang==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
+}
+
+function createContactForm() {
+  
 }
 
 function changeTab(tab, init) {
