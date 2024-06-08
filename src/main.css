@@ -45,7 +45,7 @@ p{margin: 0;}
 .dark-grey:hover{color:#000000!important;background-color:#f1f1f1!important}
 
 .dark-green{color:#ffffff!important;background-color:#0c4d09!important}
-.dark-green:hover{color:#000000!important;background-color:#48bd44!important}
+.dark-green:hover{color:#c7c6c6!important;background-color:#48bd44!important}
 
 /* Base font sizes for very small screens */
 .third {width: 100% !important; padding: 0.5em;float:left;}
