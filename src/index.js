@@ -48,7 +48,7 @@ function changeLang(language) {
   lang = language
   setButtonText('contactButton', '#contact');
   setButtonText('aboutButton', '#about');
-
+  createAddress(lang);
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (lang==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -71,9 +71,28 @@ function createLangButtons() {
   });
 }
 
+function genContent(parentELement, content) {
+  if (typeof content === 'string') {
+    new Elem({tag: 'p', attrs: {className: 'font-medium',textContent: content}, parent: parentELement});
+  } else if (typeof content === 'object') { 
+    for (const item in content) { 
+      new Elem({tag: 'p', attrs: {className: 'font-medium',textContent: item}, parent: parentELement});
+    } 
+  } else {console.error(`Content generation error to ${parentELement}`);}
+}
+
+function createAddress(lang) {
+  let adressElem = document.getElementById('addressDIV').innerHTML = ''
+  if (lang==="en") {
+    genContent(adressElem, infoBoxEN);
+  } else if (lang==="fi") {
+    genContent(adressElem, infoBoxFI)
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
-  changeLang(lang)
+  changeLang(lang);
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */

@@ -22,9 +22,10 @@ const modalDataEN = [
 const textsEN = {
   '#contact':  'Contact Form',
   '#about': 'About',
-
-  '#name' : 'Green Wania, Subsidiary of Paceville Oy',
-  '#address': 'Address: Alhonniementie 111, 37200 Siuro',
-  '#businessID': 'Business ID: 2564882-3',
 };
 
+const infoBoxEN = {
+  'p' : 'Green Wania, Subsidiary of Paceville Oy',
+  'p' : 'Address: Alhonniementie 111, 37200 Siuro',
+  'p' : 'Business ID: 2564882-3',
+}
