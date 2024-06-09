@@ -97,7 +97,7 @@ p{margin: 0;}
     .modal-footer,.modal-header{padding: 0.75%;}
     .sidebar-header{padding: 1.5%;}
     .padding-3 {padding: 1.125%  2.25%!important;}}
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
     .font-small { font-size: 0.41vw!important; }
     .font-medium { font-size: 0.61vw!important; }
     .font-large { font-size: 0.82vw!important; }
