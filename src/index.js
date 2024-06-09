@@ -48,7 +48,10 @@ function createModal(id, title, content, footerContent) {
           {tag: 'input', attrs: {type:"number", id:'phone', name:"phone", placeholder:"phone"}},
           {tag: 'input', attrs: {type:"text", id:'company', name:"company", placeholder:"company"}},
           {tag: 'textarea', attrs: {id:'message', name:"message", placeholder:"Message*", required: true}},
+          {tag: 'p', attrs: {textContent:"Contact by:"}},
+          {tag: 'label', attrs: {for:"byEmail", textContent:"Email"}},
           {tag: 'input', attrs: {type:"radio", id:'byEmail', name:"contactBy"}},
+          {tag: 'label', attrs: {for:"byPhone", textContent:"phone"}},
           {tag: 'input', attrs: {type:"radio", id:'byPhone', name:"contactBy"}},
           {tag: 'input', attrs: {type:"submit", className:"button dark-green"}}
         ]}]}).elem;
