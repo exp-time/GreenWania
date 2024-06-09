@@ -29,7 +29,8 @@ p{margin: 0;}
 }
 
 .main-title{
-  position: absolute; 
+  position: relative; 
+  top:1%;
   font-weight:400;}
 
 
