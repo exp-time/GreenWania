@@ -136,9 +136,9 @@ function createNav(lang) {
 function changeTab(tab, init) {
   if (currentTab === tab && !init) {return}
 
-  document.getElementById(currentTab).className -= " w3-dark-grey"
+  document.getElementById(currentTab).className = "button font-large dark-green padding-3"
   currentTab = tab
-  document.getElementById(currentTab).className += " w3-dark-grey"
+  document.getElementById(currentTab).className = "button font-large dark-green padding-3 w3-dark-grey"
 
   var tabs = document.getElementsByClassName("navbar");
 
