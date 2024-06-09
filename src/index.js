@@ -138,7 +138,7 @@ function changeTab(tab, init) {
 
   document.getElementById(currentTab).className = "button font-large dark-green padding-3"
   currentTab = tab
-  document.getElementById(currentTab).className = "button font-large dark-green padding-3 w3-dark-grey"
+  document.getElementById(currentTab).className = "button font-large dark-grey padding-3"
 
   var tabs = document.getElementsByClassName("navbar");
 
