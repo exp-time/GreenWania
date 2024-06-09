@@ -150,20 +150,6 @@ function changeTab(tab, init) {
   }
 }
 
-// Tabs
-function openTab(evt, cityName) {
-  var i;
-  
-  var activebtn = document.getElementsByClassName("navbar-active");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
-
-
-
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
   changeLang(lang);
