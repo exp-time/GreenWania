@@ -7,19 +7,19 @@ function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
 function openInNewTab(url) {window.open(url, '_blank').focus()}
 
-function closeElem(event, id, elem) { // Close if click outside of modal                     
+function closeElem(id, event, elem) { // Close if click outside of modal                     
   if (event.target.classList.contains(elem)) { document.getElementById(id).style.display = 'none'}
 }
 
 function makeDocumentModal(id, content) {
   new Elem({tag: 'div', attrs: {className: 'modal',id:id, onmousedown: function(event) {
-    closeElem(event, id, 'modal')}},children:[content],parent:document.body});
+    closeElem(id, event, 'modal')}}, children:[content], parent:document.body});
 }
 
 function headerWithClose(id, title, style) {
   return new Elem({tag:'header',attrs:{className:`theme-l1 ${style}`},children:[
     {tag:'p',attrs:{textContent:title}},
-    {tag:'div',attrs:{className:'button display-topright button-extra',onclick:()=>info_close(id)},children:[
+    {tag:'div',attrs:{className:'button display-topright button-extra', onclick:()=>info_close(id)},children:[
       {tag:'i',attrs:{className:'fa fa-remove'}}]}]}).elem;
 }
 
@@ -80,19 +80,8 @@ function createContactForm() {
   
 }
 
-function changeTab(tab, init) {
-  if (currentTab === tab && !init) {return}
-  currentTab = tab
-  console.log(currentTab)
-  const contentContainer = document.getElementById('content');
-  contentContainer.innerHTML = ''
-  if (currentTab === "tabOne") {
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_2.jpeg"}, parent: contentContainer});
-  } else if (currentTab === "tabTwo") {
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
-  } else if (currentTab === "tabThree") {
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg"}, parent: contentContainer});
-  }
+function createMainContent() {
+  
 }
 
 function createLangButtons() {
@@ -134,10 +123,6 @@ function createAddress(lang) {
   }
 }
 
-function createMainContent() {
-  
-}
-
 function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
@@ -148,9 +133,44 @@ function createNav(lang) {
   }
 }
 
+function changeTab(tab, init) {
+  if (currentTab === tab && !init) {return}
+
+  console.log(document.getElementById(currentTab))
+  currentTab = tab
+
+  var tabs = document.getElementsByClassName("navbar");
+  
+
+  const contentContainer = document.getElementById('content');
+  contentContainer.innerHTML = ''
+  if (currentTab === "tabOne") {
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_2.jpeg"}, parent: contentContainer});
+  } else if (currentTab === "tabTwo") {
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
+  } else if (currentTab === "tabThree") {
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg"}, parent: contentContainer});
+  }
+}
+
+// Tabs
+function openTab(evt, cityName) {
+  var i;
+  
+  var activebtn = document.getElementsByClassName("navbar-active");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
   changeLang(lang);
+
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
