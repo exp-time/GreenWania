@@ -16,7 +16,7 @@ p{margin: 0;}
   border-bottom: 2px solid white;
 }
 
-.center{text-align:center!important}
+.center{align-content: center; text-align:center!important}
 
 .display-topright{position:absolute;right:0;top:0}
 .display-topleft{position:absolute;left:0;top:0}
