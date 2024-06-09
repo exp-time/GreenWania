@@ -21,6 +21,7 @@ p{margin: 0;}
 .title-class {
   display: flex;
   flex-direction: row;
+  align-self:center
 }
 
 .display-topright{position:absolute;right:0;top:0}
