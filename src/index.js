@@ -39,9 +39,9 @@ function createFooter(content) {
 function createModal(id, title, content, footerContent) {
   let modalContent;
   if (id === "contact_modal") {
-    modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top padding-3'},
+    modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
       children: [headerWithClose(id, title, "modal-header font-xlarge"),
-        {tag: 'form', attrs: {className: 'contact-form'}, children:[
+        {tag: 'form', attrs: {className: 'contact-form padding-3'}, children:[
           {tag: 'div', attrs: {className:"font-xlarge", textContent:"Currently not functional!"}},
           {tag: 'input', attrs: {type:"text", id:'fName', name:"fName", placeholder:"First Name*", required: true}},
           {tag: 'input', attrs: {type:"text", id:'lName', name:"lName", placeholder:"Last Name*", required: true}},
