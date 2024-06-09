@@ -136,10 +136,10 @@ function createNav(lang) {
 function changeTab(tab, init) {
   if (currentTab === tab && !init) {return}
 
-  document.getElementById(currentTab) -= " w3-dark-grey"
+  document.getElementById(currentTab).className -= " w3-dark-grey"
   currentTab = tab
-  document.getElementById(currentTab) += " w3-dark-grey"
-  
+  document.getElementById(currentTab).className += " w3-dark-grey"
+
   var tabs = document.getElementsByClassName("navbar");
 
 
