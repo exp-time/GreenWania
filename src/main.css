@@ -110,7 +110,7 @@ p{margin: 0;}
     .sidebar-header{padding: 1%;}
     .padding-3 {padding: 0.75%  1.5%!important;}}
 
-animate-bottom{
+.animate-bottom{
   position:relative;
   animation:animatebottom 0.6s
 }@keyframes animatebottom{
