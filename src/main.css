@@ -16,7 +16,7 @@ p{margin: 0;}
   border-bottom: 2px solid white;
 }
 
-.center{align-self:center}
+.center{text-align:center!important}
 
 .title-class {
   display: flex;
@@ -36,7 +36,8 @@ p{margin: 0;}
 .main-title{
   position: relative; 
   top:1%;
-  font-weight:400;}
+  font-weight:400;
+}
 
 
 .button,.user-select-none{
