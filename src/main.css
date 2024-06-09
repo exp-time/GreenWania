@@ -181,6 +181,7 @@ animate-bottom{
 .logoimg {
   position:absolute;
   left:2%;
+  top: -1%;
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
