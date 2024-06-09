@@ -29,7 +29,7 @@ p{margin: 0;}
 }
 
 .main-title{
-  position: relative; 
+  position: absolute; 
   font-weight:400;}
 
 
@@ -62,7 +62,6 @@ p{margin: 0;}
 .padding-3{padding: 3%  6%!important; font-weight: 900;}
 
 .logoimg {
-  position:absolute;
   left:2%;
   vertical-align: middle;
   width: 32px;  /* Set the width as needed */
