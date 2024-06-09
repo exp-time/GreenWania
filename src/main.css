@@ -178,14 +178,6 @@ animate-bottom{
 
 }
 
-.navbar-style {
-
-}
-
-.navbar-style > button {
-  
-}
-
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
 ::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     

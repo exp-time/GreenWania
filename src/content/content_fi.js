@@ -1,7 +1,7 @@
 const modalDataFI = [
   {
     id: "contact_modal",
-    title: "Kontaktilomake",
+    title: "Yhteyslomake",
     content: "",
     footerContent: "",
   },
