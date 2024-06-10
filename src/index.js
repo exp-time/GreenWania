@@ -68,7 +68,7 @@ function createModal(id, title, content, footerContent) {
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
                 { tag: 'label', attrs: { for: "byEmail", textContent: "Email", className: 'form-label' } },
-                { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio' } },
+                { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio', checked: true } },
                 { tag: 'label', attrs: { for: "byPhone", textContent: "Phone", className: 'form-label' } },
                 { tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },
               ]
