@@ -66,7 +66,7 @@ function createModal(id, title, content, footerContent) {
             { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: "Message*", required: true, className: 'form-textarea', rows: 12 } },
             { tag: 'p', attrs: { textContent: "Contact by:" } },
             {
-              tag: 'div', attrs: { className: 'form-row form-radio-m' }, children: [
+              tag: 'div', attrs: { className: 'form-row' }, children: [
                 { tag: 'label', attrs: { for: "byEmail", textContent: "Email", className: 'form-label' } },
                 { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio' } },
                 { tag: 'label', attrs: { for: "byPhone", textContent: "Phone", className: 'form-label' } },

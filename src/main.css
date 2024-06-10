@@ -201,7 +201,6 @@ p{margin: 0;}
 
 .form-row {
   display: flex;
-  justify-content: space-between;
   gap: 1em;
 }
 
@@ -225,14 +224,11 @@ p{margin: 0;}
   margin-right: 1em;
 }
 
-.form-radio-m {
-  align-items: center;
-  gap: 0.5em; 
-}
-
 .contact-form .button {
   align-self: flex-start;
 }
+
+
 
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
