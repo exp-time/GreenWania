@@ -24,7 +24,7 @@ const textsEN = {
   '#aboutBTN': 'About',
   '#submitBTN' :'Submit',
   '#fName' :'First Name',
-  '#lName' :'Last  Name',
+  '#lName' :'Last Name',
   '#email' :'Email',
   '#phoneNum' :'Phone Number',
   '#phone' :'Phone',
