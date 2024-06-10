@@ -20,8 +20,27 @@ const modalDataFI = [
 ];
 
 const textsFI = {
-  '#contact':  'Yhteyslomake',
-  '#about': 'Tietoja',
+  '#contactBTN':  'Yhteyslomake',
+  '#aboutBTN': 'Tietoja',
+  '#submitBTN' :'Submit',
+  '#fName' :'Etunimi',
+  '#lName' :'Sukunimi',
+  '#email' :'Sähköpostiosoite',
+  '#phoneNum' :'Puhelinnumero',
+  '#phone' :'Puhelin',
+  '#company' :'Yritys',
+  '#message' :'Viesti',
+  '#contactBy' :'Ota yhteyttä:',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+
 };
 
 const infoBoxFI = {

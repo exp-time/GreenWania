@@ -20,8 +20,26 @@ const modalDataEN = [
 ];
 
 const textsEN = {
-  '#contact':  'Contact Form',
-  '#about': 'About',
+  '#contactBTN':  'Contact Form',
+  '#aboutBTN': 'About',
+  '#submitBTN' :'Submit',
+  '#fName' :'First Name',
+  '#lName' :'Last  Name',
+  '#email' :'Email',
+  '#phoneNum' :'Phone Number',
+  '#phone' :'Phone',
+  '#company' :'Company',
+  '#message' :'Message',
+  '#contactBy' :'Contact Preference:',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
+  '#' :'',
 };
 
 const infoBoxEN = {
