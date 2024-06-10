@@ -48,28 +48,28 @@ function createModal(id, title, content, footerContent) {
             { tag: 'div', attrs: { className: "font-xlarge", textContent: "Currently not functional!" } },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "text", id: 'fName', name: "fName", placeholder: getText('#fName') + "*", required: true, className: 'form-input' } },
-                { tag: 'input', attrs: { type: "text", id: 'lName', name: "lName", placeholder: getText('#lName') + "*", required: true, className: 'form-input' } }
+                { tag: 'input', attrs: { type: "text", id: 'fName', name: "fName", placeholder: getText('#fName', lang) + "*", required: true, className: 'form-input' } },
+                { tag: 'input', attrs: { type: "text", id: 'lName', name: "lName", placeholder: getText('#lName', lang) + "*", required: true, className: 'form-input' } }
               ]
             },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: getText('#email') + "*", required: true, className: 'form-input' } },
-                { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum'), className: 'form-input' } }
+                { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: getText('#email', lang) + "*", required: true, className: 'form-input' } },
+                { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum', lang), className: 'form-input' } }
               ]
             },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: getText('#company'), className: 'form-input' } },
+                { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: getText('#company', lang), className: 'form-input' } },
               ]
             },
-            { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message') + "*", required: true, className: 'form-textarea', rows: 12 } },
+            { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
             { tag: 'p', attrs: { textContent: "Contact by:" } },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'label', attrs: { for: "byEmail", textContent: getText('#email'), className: 'form-label' } },
+                { tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
                 { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio', checked: true } },
-                { tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone'), className: 'form-label' } },
+                { tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone', lang), className: 'form-label' } },
                 { tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },
               ]
             },
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /* REMOVE */
 });
 
-function getText(identifier, lang=lang) {
+function getText(identifier, lang) {
   if (lang==="en") {
     return textsEN[identifier] || 'Default Text, ERROR';
   } else if (lang==="fi") {
