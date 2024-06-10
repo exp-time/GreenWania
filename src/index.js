@@ -39,23 +39,45 @@ function createFooter(content) {
 function createModal(id, title, content, footerContent) {
   let modalContent;
   if (id === "contact_modal") {
-    modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
-      children: [headerWithClose(id, title, "modal-header font-xlarge"),
-        {tag: 'form', attrs: {className: 'contact-form padding-3'}, children:[
-          {tag: 'div', attrs: {className:"font-xlarge", textContent:"Currently not functional!"}},
-          {tag: 'input', attrs: {type:"text", id:'fName', name:"fName", placeholder:"First Name*", required: true}},
-          {tag: 'input', attrs: {type:"text", id:'lName', name:"lName", placeholder:"Last Name*", required: true}},
-          {tag: 'input', attrs: {type:"email", id:'email', name:"email", placeholder:"Email*", required: true}},
-          {tag: 'input', attrs: {type:"number", id:'phone', name:"phone", placeholder:"phone"}},
-          {tag: 'input', attrs: {type:"text", id:'company', name:"company", placeholder:"company"}},
-          {tag: 'textarea', attrs: {id:'message', name:"message", placeholder:"Message*", required: true}},
-          {tag: 'p', attrs: {textContent:"Contact by:"}},
-          {tag: 'label', attrs: {for:"byEmail", textContent:"Email"}},
-          {tag: 'input', attrs: {type:"radio", id:'byEmail', name:"contactBy"}},
-          {tag: 'label', attrs: {for:"byPhone", textContent:"Phone"}},
-          {tag: 'input', attrs: {type:"radio", id:'byPhone', name:"contactBy"}},
-          {tag: 'input', attrs: {type:"submit", className:"button dark-green"}}
-        ]}]}).elem;
+    modalContent = new Elem({
+      tag: 'div', attrs: { className: 'modal-content card-4 modal-animate-top' },
+      children: [
+        headerWithClose(id, title, "modal-header font-xlarge"),
+        {
+          tag: 'form', attrs: { className: 'contact-form padding-3' }, children: [
+            { tag: 'div', attrs: { className: "font-xlarge", textContent: "Currently not functional!" } },
+            {
+              tag: 'div', attrs: { className: 'form-row' }, children: [
+                { tag: 'input', attrs: { type: "text", id: 'fName', name: "fName", placeholder: "First Name*", required: true, className: 'form-input' } },
+                { tag: 'input', attrs: { type: "text", id: 'lName', name: "lName", placeholder: "Last Name*", required: true, className: 'form-input' } }
+              ]
+            },
+            {
+              tag: 'div', attrs: { className: 'form-row' }, children: [
+                { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: "Email*", required: true, className: 'form-input' } },
+                { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: "Phone", className: 'form-input' } }
+              ]
+            },
+            {
+              tag: 'div', attrs: { className: 'form-row' }, children: [
+                { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: "Company", className: 'form-input' } },
+              ]
+            },
+            { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: "Message*", required: true, className: 'form-textarea' } },
+            { tag: 'p', attrs: { textContent: "Contact by:" } },
+            {
+              tag: 'div', attrs: { className: 'form-row' }, children: [
+                { tag: 'label', attrs: { for: "byEmail", textContent: "Email", className: 'form-label' } },
+                { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio' } },
+                { tag: 'label', attrs: { for: "byPhone", textContent: "Phone", className: 'form-label' } },
+                { tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },
+              ]
+            },
+            { tag: 'input', attrs: { type: "submit", className: "button dark-green" } }
+          ]
+        }
+      ]
+    }).elem;
   } else {
     modalContent = new Elem({tag:'div',attrs:{className: 'modal-content card-4 modal-animate-top'},
       children: [headerWithClose(id, title, "modal-header font-xlarge"),
