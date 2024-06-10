@@ -53,5 +53,5 @@ const tabsFI = {
   tabOne: "Kuva Yksi",
   tabTwo: "Kuva Kaksi",
   tabThree: "Kuva Kolme",
-  tabFour: "UFO",
+  tabFour: "GPOWER-B",
 }

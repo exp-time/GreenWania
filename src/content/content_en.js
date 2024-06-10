@@ -52,5 +52,5 @@ const tabsEN = {
   tabOne: "Picture One",
   tabTwo: "Picture Two",
   tabThree: "Picture Three",
-  tabFour: "UFO",
+  tabFour: "GPOWER-B",
 }
