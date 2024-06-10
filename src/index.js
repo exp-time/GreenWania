@@ -174,7 +174,7 @@ function changeTab(tab, init) {
   } else if (currentTab === "tabTwo") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
   } else if (currentTab === "tabThree") {
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg"}, parent: contentContainer});
+    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 50%;"}, parent: contentContainer});
   }
 }
 
