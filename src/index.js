@@ -64,7 +64,7 @@ function createModal(id, title, content, footerContent) {
               ]
             },
             { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
-            { tag: 'p', attrs: { textContent: "Contact by:" } },
+            { tag: 'p', attrs: { textContent: getText('#contactBy', lang) } },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
                 { tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
