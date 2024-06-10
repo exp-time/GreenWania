@@ -175,6 +175,11 @@ function changeTab(tab, init) {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
   } else if (currentTab === "tabThree") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
+  } else if (currentTab === "tabFour") {
+    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
+      {tag: 'img', attrs: {className:'lang-btns-img', src: "src/img/products/G POWER-B/GPOWER137.png"}}
+    
+    ], parent: contentContainer});
   }
 }
 
