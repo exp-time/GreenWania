@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /* REMOVE */
 });
 
-function getText(identifier, lang) {
+function getText(identifier, lang=lang) {
   if (lang==="en") {
     return textsEN[identifier] || 'Default Text, ERROR';
   } else if (lang==="fi") {
