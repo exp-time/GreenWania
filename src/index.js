@@ -104,13 +104,25 @@ function changeLang(language) {
   }
 }
 
-function createContactForm() {
-  
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
 }
 
-function createMainContent() {
-  
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
 }
+
+
 
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
@@ -176,7 +188,10 @@ function changeTab(tab, init) {
   } else if (currentTab === "tabThree") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
   } else if (currentTab === "tabFour") {
+    showDivs(1);
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
+      {tag: 'a', attrs: {className: "button dark-grey", style:"position:absolute;top:45%;left:0;", onclick:()=>plusDivs(-1), textContent: "<"}},
+      {tag: 'a', attrs: {className: "button dark-grey", style:"position:absolute;top:45%;right:0;", onclick:()=>plusDivs(+1), textContent: ">"}},
       {tag: 'img', attrs: {className: "img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}}
     
     ], parent: contentContainer});
