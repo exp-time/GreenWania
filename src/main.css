@@ -191,7 +191,44 @@ p{margin: 0;}
   filter: contrast(0.3);
 }
 
-/* .contact-form {} */
+
+/* Style for contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.form-input {
+  flex: 1;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.form-label {
+  margin-right: 0.5em;
+  font-size: 1em;
+}
+
+.form-radio {
+  margin-right: 1em;
+}
+
+.contact-form .button {
+  align-self: flex-start;
+}
 
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
