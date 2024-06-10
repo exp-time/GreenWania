@@ -225,6 +225,11 @@ p{margin: 0;}
   margin-right: 1em;
 }
 
+.form-radio-m {
+  align-items: center;
+  gap: 0.5em; 
+}
+
 .contact-form .button {
   align-self: flex-start;
 }
