@@ -8,7 +8,7 @@ const modalDataEN = [
   {
     id: "about_modal",
     title: "About Section",
-    content: "kaj@greenwania.com, tommi@greenwania.com",
+    content: "myynti@greenwania.com",
     footerContent: ""
   },
   {
