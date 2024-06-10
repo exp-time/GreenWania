@@ -20,7 +20,7 @@ function headerWithClose(id, title, style) {
   return new Elem({tag:'header',attrs:{className:`theme-l1 ${style}`},children:[
     {tag:'p',attrs:{textContent:title}},
     {tag:'div',attrs:{className:'button display-topright button-extra', onclick:()=>info_close(id)},children:[
-      {tag:'i',attrs:{className:'fa fa-remove'}}]}]}).elem;
+      { tag: 'span', attrs: { textContent: 'X' } }]}]}).elem;
 }
 
 function createFooter(content) {
