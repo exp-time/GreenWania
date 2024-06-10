@@ -228,7 +228,9 @@ p{margin: 0;}
   align-self: flex-start;
 }
 
-
+.bold {
+  font-weight: bold;
+}
 
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
