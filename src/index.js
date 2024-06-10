@@ -2,6 +2,7 @@ let isString = value => typeof value === 'string';
 
 let lang = "en"
 let currentTab = "tabOne"
+var slideIndex = 1;
 
 function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
@@ -104,26 +105,6 @@ function changeLang(language) {
   }
 }
 
-// Slideshows
-var slideIndex = 1;
-
-function plusDivs(n) {
-  slideIndex = slideIndex + n;
-  showDivs(slideIndex);
-}
-
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-
-
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
   // Image URLs (replace with your actual image paths)
@@ -192,11 +173,28 @@ function changeTab(tab, init) {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
       {tag: 'a', attrs: {className: "button dark-grey", style:"position:absolute;top:45%;left:0;", onclick:()=>plusDivs(-1), textContent: "<"}},
       {tag: 'a', attrs: {className: "button dark-grey", style:"position:absolute;top:45%;right:0;", onclick:()=>plusDivs(+1), textContent: ">"}},
-      {tag: 'img', attrs: {className: "img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}}
+      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}}
     
     ], parent: contentContainer});
   }
 }
+
+// Slideshows
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
 
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
