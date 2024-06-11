@@ -136,7 +136,7 @@ p{margin: 0;}
   cursor:pointer;
   white-space:nowrap}
   
-.button-extra:hover{color:#000!important;background-color:#ccc!important} 
+.button-extra:hover{color:#000!important;background-color:#ccc!important;border: none!important;} 
 
 
 .centerimg{
