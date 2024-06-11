@@ -126,7 +126,6 @@ p{margin: 0;}
   from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 
 .button{
-  border:none;
   display:inline-block;
   padding:inherit;
   vertical-align:middle;
@@ -153,10 +152,6 @@ p{margin: 0;}
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.navbar > button {
-  border: 2px solid white!important;
 }
 
 .modal{
