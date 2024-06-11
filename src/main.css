@@ -54,16 +54,9 @@ p{margin: 0;}
   font-weight:400;
 }
 
-
-.button,.user-select-none{
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none} 
-
-
+.bold {
+  font-weight: bold;
+}
 
 /* Base font sizes for very small screens */
 .third {width: 100% !important; padding: 0.5em;float:left;}
@@ -78,7 +71,6 @@ p{margin: 0;}
 .modal-footer,.modal-header{padding: 2%;}
 .sidebar-header{padding: 4%;}
 .padding-3{padding: 3%  6%!important; font-weight: 900;}
-
 .logoimg {
   left:2%;
   vertical-align: middle;
@@ -245,11 +237,65 @@ p{margin: 0;}
   align-self: flex-start;
 }
 
-.bold {
-  font-weight: bold;
-}
 
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
 ::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     
 ::-webkit-scrollbar-thumb:hover {background: #48bd44;} 
+
+.button,.user-select-none{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none} 
+
+
+  /* Basic Styles for the Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Basic Styles for the Tabs */
+.navbar .tab {
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the Active Tab */
+.navbar .tab.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #333;
+  z-index: 1;
+}
+
+/* Styles for Hover Effect */
+.navbar .tab:hover {
+  background-color: #575757;
+  color: white;
+}
+
+/* Ensuring the active tab is above the rest */
+.navbar .tab.active {
+  transform: translateY(-2px);
+}
+
+/* Ensuring the active tab's color contrast */
+.theme-bg.contrast {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
