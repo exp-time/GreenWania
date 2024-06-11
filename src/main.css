@@ -16,7 +16,11 @@ p{margin: 0;}
 
 .content {flex: 1;}
 
-.contrast:hover {
+.contrastbtn {
+  border: none!important;
+}
+
+.contrastbtn:hover {
   filter: contrast(0.3);
 }
 
@@ -136,7 +140,7 @@ p{margin: 0;}
   cursor:pointer;
   white-space:nowrap}
   
-.button-extra:hover{color:#000!important;background-color:#ccc!important;border: none!important;} 
+.button-extra:hover{color:#000!important;background-color:#ccc!important;} 
 
 
 .centerimg{
