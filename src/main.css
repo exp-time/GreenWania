@@ -17,7 +17,7 @@ p{margin: 0;}
 .content {flex: 1;}
 
 .contrastbtn {
-  border-bottom: 2px solid white!important;
+  border-bottom: 2px solid #f1f1f1!important;
 }
 
 .contrastbtn:hover {
