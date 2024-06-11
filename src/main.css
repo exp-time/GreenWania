@@ -155,6 +155,10 @@ p{margin: 0;}
   margin-right: auto;
 }
 
+.navbar .button {
+  border: 2px solid white!important;
+}
+
 .modal{
   display:none;
   position:fixed;
