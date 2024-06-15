@@ -122,8 +122,8 @@ p{margin: 0;}
     .font-mega { font-size: 5.5vw!important; }
     .modal-footer,.modal-header{padding: 1%;}
     .sidebar-header{padding: 2%;}
-    .padding-3 {padding: 1.5%  3%!important;}}
-    .btn-container2 {width: 5vw; height: 5vw!important;}
+    .padding-3 {padding: 1.5%  3%!important;}
+    .btn-container2 {width: 5vw; height: 5vw!important;}}
 @media (min-width: 1650px) {
     .logoimg {width: 70px;}
     .third {width: 33.3333% !important;}
@@ -137,8 +137,8 @@ p{margin: 0;}
     .font-mega { font-size: 4.95vw!important; }
     .modal-footer,.modal-header{padding: 0.75%;}
     .sidebar-header{padding: 1.5%;}
-    .padding-3 {padding: 1.125%  2.25%!important;}}
-    .btn-container2 {width: 3.5vw; height: 3.5vw!important;}
+    .padding-3 {padding: 1.125%  2.25%!important;}
+    .btn-container2 {width: 3.5vw; height: 3.5vw!important;}}
 @media (min-width: 1900px) {
     .font-small { font-size: 0.41vw!important; }
     .font-medium { font-size: 0.61vw!important; }
@@ -150,8 +150,8 @@ p{margin: 0;}
     .font-mega { font-size: 4.49vw!important; }
     .modal-footer,.modal-header{padding: 0.5%!important;}
     .sidebar-header{padding: 1%!important;}
-    .padding-3 {padding: 0.75%  1.5%!important;}}
-    .btn-container2 {width: 2.5vw; height: 2.5vw!important;}
+    .padding-3 {padding: 0.75%  1.5%!important;}
+    .btn-container2 {width: 2.5vw; height: 2.5vw!important;}}
 
 .animate-bottom{
   position:relative;
