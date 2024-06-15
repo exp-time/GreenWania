@@ -70,7 +70,7 @@ p{margin: 0;}
   position: fixed;
   z-index: 101;
   right: 1%; 
-  top: 90%;
+  bottom: 5%;
   width: 3vw;
   height: 3vw;
   display: flex;
