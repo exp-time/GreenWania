@@ -86,7 +86,6 @@ function createModal(id, title, content, footerContent) {
           {tag: 'p', attrs: {className:'font-large',textContent:content}}]}]}).elem;
     if (footerContent && footerContent != ""){ modalContent.appendChild(createFooter(footerContent)) }
   }
-
   makeDocumentModal(id, modalContent)
 }
 

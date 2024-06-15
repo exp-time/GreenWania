@@ -71,6 +71,8 @@ p{margin: 0;}
   z-index: 101;
   right: 1%; 
   top: 90%;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
