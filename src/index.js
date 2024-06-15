@@ -142,6 +142,9 @@ function createAddress(lang) {
   } else if (lang === "fi") {
     genContent(adressElem, infoBoxFI, 'p', 'font-large')
   }
+
+  new Elem({tag: 'div', attrs: {className: 'button btn-container2',id:id, textContent: "&mapstoup;",
+  onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, parent:adressElem});
 }
 
 function createNav(lang) {

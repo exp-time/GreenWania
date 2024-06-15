@@ -14,6 +14,12 @@ p{margin: 0;}
 .theme-bg {color:#000000!important;background-color:#f1f1f1 !important}
 .theme-bg-hover:hover { background-color:#aaaaaa !important}
 
+/* Not used */
+.theme-light {color:#000000 !important; background-color:#f0f0f0 !important}
+.tooltip {position: relative;font-size:12px;}
+.tooltip:hover .textb{display:block;}
+/* Not used */
+
 .content {flex: 1;}
 
 .contrastbtn {
@@ -49,6 +55,11 @@ p{margin: 0;}
 .btn-container{
   position:absolute;
   top:1%;
+  right:1%;
+}
+
+.btn-container2{
+  position:absolute;
   right:1%;
 }
 
