@@ -109,6 +109,10 @@ p{margin: 0;}
   height: auto;  /* Keeps the aspect ratio of the image */
 }
 
+
+@media (min-width: 800px) {
+  .btn-container2 {width: 7vw; height: 7vw!important;}}
+
 @media (min-width: 1100px) {
     .logoimg {width: 40px;}
     .third {width: 50% !important;}
