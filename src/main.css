@@ -107,7 +107,7 @@ p{margin: 0;}
   width: 32px;  /* Set the width as needed */
   height: auto;  /* Keeps the aspect ratio of the image */
 }
-.btn-container2 {width: 10vw; height: 10vw;}
+.btn-container2 {width: 10vw; height: 10vw!important;}
 
 @media (min-width: 1100px) {
     .logoimg {width: 40px;}
@@ -123,7 +123,7 @@ p{margin: 0;}
     .modal-footer,.modal-header{padding: 1%;}
     .sidebar-header{padding: 2%;}
     .padding-3 {padding: 1.5%  3%!important;}}
-    .btn-container2 {width: 5vw; height: 5vw;}
+    .btn-container2 {width: 5vw; height: 5vw!important;}
 @media (min-width: 1650px) {
     .logoimg {width: 70px;}
     .third {width: 33.3333% !important;}
@@ -138,7 +138,7 @@ p{margin: 0;}
     .modal-footer,.modal-header{padding: 0.75%;}
     .sidebar-header{padding: 1.5%;}
     .padding-3 {padding: 1.125%  2.25%!important;}}
-    .btn-container2 {width: 3.5vw; height: 3.5vw;}
+    .btn-container2 {width: 3.5vw; height: 3.5vw!important;}
 @media (min-width: 1900px) {
     .font-small { font-size: 0.41vw!important; }
     .font-medium { font-size: 0.61vw!important; }
@@ -148,10 +148,10 @@ p{margin: 0;}
     .font-xxxlarge { font-size: 2.05vw!important; }
     .font-jumbo { font-size: 2.86vw!important; }
     .font-mega { font-size: 4.49vw!important; }
-    .modal-footer,.modal-header{padding: 0.5%;}
-    .sidebar-header{padding: 1%;}
+    .modal-footer,.modal-header{padding: 0.5%!important;}
+    .sidebar-header{padding: 1%!important;}
     .padding-3 {padding: 0.75%  1.5%!important;}}
-    .btn-container2 {width: 2.5vw; height: 2.5vw;}
+    .btn-container2 {width: 2.5vw; height: 2.5vw!important;}
 
 .animate-bottom{
   position:relative;
