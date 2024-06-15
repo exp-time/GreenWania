@@ -223,12 +223,13 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+window.addEventListener('scroll', checkScroll);
 
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
   changeLang(lang);
   checkScroll();
-  
+
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
