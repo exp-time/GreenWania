@@ -102,8 +102,9 @@ function changeLang(language) {
   } else if (lang==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
-  new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2', innerHTML: '&mapstoup;',
-  onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, parent:document.body});
+  new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2',
+  onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, children:[
+    {tag: 'div', attrs: {innerHTML: '&mapstoup;'}}], parent:document.body});
 }
 
 function createLangButtons() {
