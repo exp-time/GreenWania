@@ -53,11 +53,11 @@ p{margin: 0;}
 
 
 .corner-all {
-  border-radius: 8%;
+  border-radius: 5%;
 }
 
 .corner-top {
-  border-radius: 1%;
+  border-radius: 4% 4% 0% 0%; /* top-left | top-right | bottom-right | bottom-left */
 }
 
 .btn-container{
