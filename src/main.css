@@ -60,23 +60,16 @@ p{margin: 0;}
 
 .btn-container2 {
   position: absolute;
-  right: 1%; /* Adjust as needed */
+  right: 1%; 
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5em; /* Adjust padding as needed */
-  background-color: #333; /* Adjust background color as needed */
-  color: white; /* Adjust text color as needed */
-  cursor: pointer;
-  border-radius: 5px; /* Optional: add rounded corners */
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
 }
 
-.btn-container2:hover {
-  background-color: #555; /* Change background color on hover */
-}
 
 .main-title{
   position: relative; 
