@@ -73,7 +73,7 @@ p{margin: 0;}
   bottom: 5%;
   width: 3vw;
   height: 3vw;
-  display: flex;
+  display: flex !important;
   text-align: center;
   align-items: center;
   justify-content: center;
