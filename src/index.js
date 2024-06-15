@@ -102,9 +102,33 @@ function changeLang(language) {
   } else if (lang==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
-  new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2',
-  onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, children:[
-    {tag: 'div', attrs: {innerHTML: '&mapstoup;'}}], parent:document.body});
+
+}
+
+// Function to create the "back to top" button
+function createBackToTopButton() {
+  if (!document.querySelector('.btn-container2')) {
+    new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2',
+    onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, children:[
+      {tag: 'div', attrs: {innerHTML: '&mapstoup;'}}], parent:document.body});
+  }
+}
+
+// Function to remove the "back to top" button
+function removeBackToTopButton() {
+  const button = document.querySelector('.btn-container2');
+  if (button) {
+    button.remove();
+  }
+}
+
+// Function to check the scroll position and conditionally create/remove the button
+function checkScroll() {
+  if (window.scrollY > 0) {
+    createBackToTopButton();
+  } else {
+    removeBackToTopButton();
+  }
 }
 
 function createLangButtons() {
@@ -203,7 +227,8 @@ function showDivs(n) {
 document.addEventListener('DOMContentLoaded', function() { 
   createLangButtons();
   changeLang(lang);
-
+  checkScroll();
+  
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
