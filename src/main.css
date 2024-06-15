@@ -57,7 +57,7 @@ p{margin: 0;}
 }
 
 .corner-top {
-  border-radius: 4% 4% 0% 0%; /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 8% 8% 0% 0%; /* top-left | top-right | bottom-right | bottom-left */
 }
 
 .btn-container{
