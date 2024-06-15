@@ -143,7 +143,7 @@ function createAddress(lang) {
     genContent(adressElem, infoBoxFI, 'p', 'font-large')
   }
 
-  new Elem({tag: 'div', attrs: {className: 'button font-jumbo dark-green btn-container2', innerHTML: '&mapstoup;',
+  new Elem({tag: 'div', attrs: {className: 'button font-jumbo dark-green corner-all btn-container2', innerHTML: '&mapstoup;',
   onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, parent:adressElem});
 }
 

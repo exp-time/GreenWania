@@ -52,6 +52,16 @@ p{margin: 0;}
 .display-topleft{position:absolute;left:0;top:0}
 .display-left{position:absolute;left:0}
 
+
+
+.corner-all {
+  border-radius: 1%;
+}
+
+.corner-top {
+  border-radius: 1%;
+}
+
 .btn-container{
   position:absolute;
   top:1%;
@@ -66,10 +76,8 @@ p{margin: 0;}
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
 }
-
 
 .main-title{
   position: relative; 
@@ -160,7 +168,6 @@ p{margin: 0;}
   white-space:nowrap}
   
 .button-extra:hover{color:#000!important;background-color:#ccc!important;} 
-
 
 .centerimg{
   display: block;
