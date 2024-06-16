@@ -90,14 +90,15 @@ function createModal(id, title, content, footerContent, lang) {
 }
 
 function changeLang(language) {
+  lang = language
   createNav(language)
   changeTab(currentTab, true)
   footerContents(language)
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (language==="en") {
-    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent, lang)});
+    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   } else if (language==="fi") {
-    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent, lang)});
+    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
 
 }
