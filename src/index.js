@@ -103,6 +103,8 @@ function changeLang(language) {
 }
 
 function footerContents(lang) {
+  let footer = document.getElementById('footer')
+  footer.innerHTML = ''
   new Elem({ tag: 'div', attrs: { className: 'footer-container user-select-none padding-2-lb' }, children: [
     new Elem({ tag: 'div', attrs: { className: 'footer-left' }, children: [
       { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info1', lang) } },
@@ -116,7 +118,7 @@ function footerContents(lang) {
     new Elem({tag: 'div', attrs: { className: 'footer-right' }, children: [
       { tag: 'p', attrs: { className: 'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.' } }
     ]})
-  ], parent: document.getElementById('footer')});
+  ], parent: footer});
 }
 
 // Function to create the "back to top" button
