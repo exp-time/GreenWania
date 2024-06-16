@@ -293,7 +293,6 @@ p{margin: 0;}
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer-section {
