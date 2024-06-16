@@ -303,8 +303,10 @@ p{margin: 0;}
   align-items: center;
 }
 
-.footer-section > div{
-  padding: 4%;
+.footer-section > div {
+  padding: 0 10px; /* Adjust padding to ensure buttons have space */
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
