@@ -305,6 +305,7 @@ p{margin: 0;}
 
 .footer-section > div{
   padding: 2%;
+  align-items: center;
 }
 
 .footer-left {
