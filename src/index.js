@@ -127,7 +127,6 @@ function footerContents(lang) {
           { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
         ]
       }),
-
       // Copyright notice on the right
       new Elem({
         tag: 'div',
