@@ -50,8 +50,8 @@ p{margin: 0;}
 .display-topleft{position:absolute;left:0;top:0}
 .display-left{position:absolute;left:0}
 
-.button-padding {
-  padding: 0 10px;
+.button-margin{
+  margin: 0 2%;
 }
 
 .corner-all {
