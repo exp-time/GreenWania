@@ -305,8 +305,13 @@ p{margin: 0;}
 
 .footer-left {
   justify-content: flex-start;
+  flex-direction: column; 
 }
 
 .footer-right {
   justify-content: flex-end;
+}
+
+.button-margin {
+  margin: 0 10px;
 }
