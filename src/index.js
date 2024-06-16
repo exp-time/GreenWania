@@ -106,9 +106,9 @@ function footerContents(lang) {
   let footer = document.getElementById('footer')
   new Elem({tag:'div',attrs:{className: 'center padding-3 border-bottom user-select-none'},
     children: [
-      {tag:'div', attrs:{className:'button corner-all font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang),
+      {tag:'div', attrs:{className:'button font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang),
         onclick: () => info_open('contact_modal')}},
-      {tag:'div', attrs:{className:'button corner-all font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang),
+      {tag:'div', attrs:{className:'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang),
         onclick: () => info_open('about_modal')}}], parent: footer,
   });
   new Elem({tag:'div',attrs:{className: 'padding-3 border-bottom'},
