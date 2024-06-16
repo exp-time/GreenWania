@@ -304,6 +304,7 @@ p{margin: 0;}
 }
 
 .footer-section > div{
+  display: flex;
   padding: 2%;
   align-items: center;
 }
