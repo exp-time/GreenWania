@@ -307,6 +307,7 @@ p{margin: 0;}
   display: flex;
   padding: 2%;
   align-items: center;
+  text-align: center;
 }
 
 .footer-left {
