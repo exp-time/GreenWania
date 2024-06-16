@@ -304,13 +304,8 @@ p{margin: 0;}
   flex-direction: column;
 }
 
-.footer-center {
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
 .footer-right {
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 }

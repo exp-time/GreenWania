@@ -111,7 +111,7 @@ function footerContents(lang) {
       // Address info section on the left
       new Elem({
         tag: 'div',
-        attrs: { className: 'footer-section footer-left' },
+        attrs: { className: 'footer-left' },
         children: [
           { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info1', lang) } },
           { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info2', lang) } },
@@ -131,7 +131,7 @@ function footerContents(lang) {
       // Copyright notice on the right
       new Elem({
         tag: 'div',
-        attrs: { className: 'footer-section footer-right' },
+        attrs: { className: 'footer-right' },
         children: [
           { tag: 'p', attrs: { className: 'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.' } }
         ]
