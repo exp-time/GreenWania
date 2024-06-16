@@ -92,7 +92,7 @@ function createModal(id, title, content, footerContent) {
 function changeLang(language) {
   createNav(language)
   changeTab(currentTab, true)
-  footerContents(lang)
+  footerContents(language)
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (language==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
