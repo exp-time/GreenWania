@@ -28,7 +28,7 @@ p{margin: 0;}
 
 .padding{padding:8px 16px!important}
 .padding-3{padding: 3%  6%!important; font-weight: 900;}
-
+.padding-2-lb{padding: 2%  4%!important; font-weight: 500;}
 .downShadow {box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 .upShadow {box-shadow:0 -4px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 

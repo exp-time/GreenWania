@@ -103,7 +103,7 @@ function changeLang(language) {
 }
 
 function footerContents(lang) {
-  new Elem({ tag: 'div', attrs: { className: 'footer-container user-select-none padding-3' }, children: [
+  new Elem({ tag: 'div', attrs: { className: 'footer-container user-select-none padding-2-lb' }, children: [
     new Elem({ tag: 'div', attrs: { className: 'footer-left' }, children: [
       { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info1', lang) } },
       { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info2', lang) } },
