@@ -304,10 +304,8 @@ p{margin: 0;}
 }
 
 .footer-section > div{
-  display: flex;
-  padding: 2%;
-  align-items: center;
-  text-align: center;
+  padding: 4%;
+  justify-content: center;
 }
 
 .footer-left {
