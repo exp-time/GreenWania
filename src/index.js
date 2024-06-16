@@ -110,8 +110,8 @@ function footerContents(lang) {
       { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info3', lang) } }
     ]}),
     new Elem({tag: 'div', attrs: { className: 'footer-section' }, children: [
-      { tag: 'button', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
-      { tag: 'button', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
+      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
+      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
     ]}),
     new Elem({tag: 'div', attrs: { className: 'footer-right' }, children: [
       { tag: 'p', attrs: { className: 'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.' } }
