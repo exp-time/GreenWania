@@ -90,7 +90,7 @@ function createModal(id, title, content, footerContent) {
 }
 
 function changeLang(language) {
-  lang = language
+  lang = language // used in createModal!
   createNav(language)
   changeTab(currentTab, true)
   footerContents(language)
