@@ -90,20 +90,31 @@ function createModal(id, title, content, footerContent) {
 }
 
 function changeLang(language) {
-  lang = language
-  createNav(lang)
+
+  createNav(language)
   changeTab(currentTab, true)
-  setButtonText('contactButton', '#contactBTN');
-  setButtonText('aboutButton', '#aboutBTN');
-  createAddress(lang);
+  contactAboutBtns(lang)
+  createAddress(language);
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
-  if (lang==="en") {
+  if (language==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
-  } else if (lang==="fi") {
+  } else if (language==="fi") {
     modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
   }
 
 }
+
+function contactAboutBtns(lang) {
+  let footer = document.getElementById('footer')
+  new Elem({tag:'div',attrs:{className: 'center padding-3 border-bottom user-select-none'},
+    children: [
+      {tag:'div', attrs:{className:'button corner-all font-xlarge dark-green', textContent: getText('#contactBTN', lang),
+        onclick: () => info_open('contact_modal')}},
+      {tag:'div', attrs:{className:'button corner-all font-xlarge dark-green', textContent: getText('#aboutBTN', lang),
+        onclick: () => info_open('about_modal')}}], parent: footer,
+      });
+}
+
 
 // Function to create the "back to top" button
 function createBackToTopButton() {
