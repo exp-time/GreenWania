@@ -37,7 +37,7 @@ function createFooter(content) {
   return footer
 }
 
-function createModal(id, title, content, footerContent) {
+function createModal(id, title, content, footerContent, lang) {
   let modalContent;
   if (id === "contact_modal") {
     modalContent = new Elem({
@@ -95,9 +95,9 @@ function changeLang(language) {
   footerContents(language)
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (language==="en") {
-    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
+    modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent, lang)});
   } else if (language==="fi") {
-    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
+    modalDataFI.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent, lang)});
   }
 
 }
