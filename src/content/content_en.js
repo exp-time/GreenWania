@@ -40,13 +40,10 @@ const textsEN = {
   '#' :'',
   '#' :'',
   '#' :'',
+  "#info1" : 'Green Wania, Subsidiary of Paceville Oy',
+  "#info2" : 'Address: Alhonniementie 111, 37200 Siuro',
+  "#info3" : 'Business ID: 2564882-3',
 };
-
-const infoBoxEN = {
-  p1 : 'Green Wania, Subsidiary of Paceville Oy',
-  p2 : 'Address: Alhonniementie 111, 37200 Siuro',
-  p3 : 'Business ID: 2564882-3',
-}
 
 const tabsEN = {
   tabOne: "Picture One",

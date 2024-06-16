@@ -40,14 +40,10 @@ const textsFI = {
   '#' :'',
   '#' :'',
   '#' :'',
-
+  "#info1" : 'Green Wania, Paceville Oy:n aputoiminimi',
+  "#info2" : 'Postiosoite: Alhonniementie 111, 37200 Siuro',
+  "#info3" : 'Y-tunnus: 2564882-3',
 };
-
-const infoBoxFI = {
-  p1 : 'Green Wania, Paceville Oy:n aputoiminimi',
-  p2 : 'Postiosoite: Alhonniementie 111, 37200 Siuro',
-  p3 : 'Y-tunnus: 2564882-3',
-}
 
 const tabsFI = {
   tabOne: "Kuva Yksi",

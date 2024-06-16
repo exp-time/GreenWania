@@ -90,11 +90,9 @@ function createModal(id, title, content, footerContent) {
 }
 
 function changeLang(language) {
-
   createNav(language)
   changeTab(currentTab, true)
-  contactAboutBtns(lang)
-  createAddress(language);
+  footerContents(lang)
   document.querySelectorAll('.modal').forEach(modal => modal.remove());
   if (language==="en") {
     modalDataEN.forEach(function(modal) {createModal(modal.id, modal.title, modal.content, modal.footerContent)});
@@ -104,7 +102,7 @@ function changeLang(language) {
 
 }
 
-function contactAboutBtns(lang) {
+function footerContents(lang) {
   let footer = document.getElementById('footer')
   new Elem({tag:'div',attrs:{className: 'center padding-3 border-bottom user-select-none'},
     children: [
@@ -112,9 +110,32 @@ function contactAboutBtns(lang) {
         onclick: () => info_open('contact_modal')}},
       {tag:'div', attrs:{className:'button corner-all font-xlarge dark-green', textContent: getText('#aboutBTN', lang),
         onclick: () => info_open('about_modal')}}], parent: footer,
-      });
+  });
+  new Elem({tag:'div',attrs:{className: 'padding-3 border-bottom'},
+    children: [
+      {tag:'p', attrs:{className:'font-large', textContent: getText('#info1', lang)}},
+      {tag:'p', attrs:{className:'font-large', textContent: getText('#info2', lang)}},
+      {tag:'p', attrs:{className:'font-large', textContent: getText('#info3', lang)}}
+    ], parent: footer,
+  });
+  new Elem({tag:'div',attrs:{className: 'padding-3 font-large user-select-none'},
+    children: [
+      {tag:'p', attrs:{className:'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.'}},
+    ], parent: footer,
+  });
 }
 
+function createAddress(lang) {
+  <div id="addressDIV" class="padding-3 border-bottom"></div>
+  let adressElem = document.getElementById('addressDIV')
+  adressElem.innerHTML = ''
+
+  if (lang === "en") {
+    genContent(adressElem, infoBoxEN, 'p', 'font-large');
+  } else if (lang === "fi") {
+    genContent(adressElem, infoBoxFI, 'p', 'font-large')
+  }
+}
 
 // Function to create the "back to top" button
 function createBackToTopButton() {
@@ -169,16 +190,6 @@ function genContent(parentELement, content, tag, classList) {
       }
     } 
   } else {console.error(`Content generation error to ${parentELement}`);}
-}
-
-function createAddress(lang) {
-  let adressElem = document.getElementById('addressDIV')
-  adressElem.innerHTML = ''
-  if (lang === "en") {
-    genContent(adressElem, infoBoxEN, 'p', 'font-large');
-  } else if (lang === "fi") {
-    genContent(adressElem, infoBoxFI, 'p', 'font-large')
-  }
 }
 
 function createNav(lang) {
