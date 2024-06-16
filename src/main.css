@@ -169,7 +169,7 @@ p{margin: 0;}
 
 .button{
   display:inline-block;
-  padding:inherit;
+  
   vertical-align:middle;
   overflow:hidden;
   text-decoration:none;
