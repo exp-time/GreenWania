@@ -303,6 +303,10 @@ p{margin: 0;}
   align-items: center;
 }
 
+.footer-section > div{
+  padding: 2%;
+}
+
 .footer-left {
   justify-content: left;
   flex-direction: column;
