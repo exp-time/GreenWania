@@ -50,7 +50,9 @@ p{margin: 0;}
 .display-topleft{position:absolute;left:0;top:0}
 .display-left{position:absolute;left:0}
 
-
+.button-padding {
+  padding: 0 10px; /* Adjust the padding values as needed */
+}
 
 .corner-all {
   border-radius: 5%;
