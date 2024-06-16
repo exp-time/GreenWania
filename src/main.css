@@ -297,7 +297,6 @@ p{margin: 0;}
 
 .footer-section {
   display: flex;
-  align-items: center;
 }
 
 .footer-left {
@@ -307,11 +306,13 @@ p{margin: 0;}
 
 .footer-center {
   justify-content: center;
+  align-items: center;
   flex: 1;
 }
 
 .footer-right {
   justify-content: flex-end;
+  align-items: center;
 }
 
 .button-margin {
