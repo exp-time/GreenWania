@@ -125,18 +125,6 @@ function footerContents(lang) {
   });
 }
 
-function createAddress(lang) {
-  <div id="addressDIV" class="padding-3 border-bottom"></div>
-  let adressElem = document.getElementById('addressDIV')
-  adressElem.innerHTML = ''
-
-  if (lang === "en") {
-    genContent(adressElem, infoBoxEN, 'p', 'font-large');
-  } else if (lang === "fi") {
-    genContent(adressElem, infoBoxFI, 'p', 'font-large')
-  }
-}
-
 // Function to create the "back to top" button
 function createBackToTopButton() {
   if (!document.querySelector('.btn-container2')) {
