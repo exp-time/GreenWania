@@ -294,18 +294,22 @@ p{margin: 0;}
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .footer-section {
-  flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .footer-left {
   justify-content: flex-start;
-  flex-direction: column; 
+  flex-direction: column; /* This makes the address info stack in a column */
+}
+
+.footer-center {
+  justify-content: center;
+  flex: 1;
 }
 
 .footer-right {
