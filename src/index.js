@@ -104,24 +104,41 @@ function changeLang(language) {
 
 function footerContents(lang) {
   let footer = document.getElementById('footer')
-  new Elem({tag:'div',attrs:{className: 'center padding-3 border-bottom user-select-none'},
+  new Elem({
+    tag: 'div',
+    attrs: { className: 'footer-container padding-3 border-bottom user-select-none' },
     children: [
-      {tag:'div', attrs:{className:'button font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang),
-        onclick: () => info_open('contact_modal')}},
-      {tag:'div', attrs:{className:'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang),
-        onclick: () => info_open('about_modal')}}], parent: footer,
-  });
-  new Elem({tag:'div',attrs:{className: 'padding-3 border-bottom'},
-    children: [
-      {tag:'p', attrs:{className:'font-large', textContent: getText('#info1', lang)}},
-      {tag:'p', attrs:{className:'font-large', textContent: getText('#info2', lang)}},
-      {tag:'p', attrs:{className:'font-large', textContent: getText('#info3', lang)}}
-    ], parent: footer,
-  });
-  new Elem({tag:'div',attrs:{className: 'padding-3 font-large user-select-none'},
-    children: [
-      {tag:'p', attrs:{className:'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.'}},
-    ], parent: footer,
+      // Address info section on the left
+      new Elem({
+        tag: 'div',
+        attrs: { className: 'footer-section footer-left' },
+        children: [
+          { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info1', lang) } },
+          { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info2', lang) } },
+          { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info3', lang) } }
+        ]
+      }).elem,
+
+      // Buttons in the middle
+      new Elem({
+        tag: 'div',
+        attrs: { className: 'footer-section' },
+        children: [
+          { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
+          { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
+        ]
+      }).elem,
+
+      // Copyright notice on the right
+      new Elem({
+        tag: 'div',
+        attrs: { className: 'footer-section footer-right' },
+        children: [
+          { tag: 'p', attrs: { className: 'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.' } }
+        ]
+      }).elem
+    ],
+    parent: footer
   });
 }
 
