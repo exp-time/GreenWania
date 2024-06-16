@@ -302,8 +302,8 @@ p{margin: 0;}
 }
 
 .footer-left {
-  justify-content: flex-start;
-  flex-direction: column; /* This makes the address info stack in a column */
+  justify-content: left;
+  flex-direction: column;
 }
 
 .footer-center {
