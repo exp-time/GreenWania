@@ -253,12 +253,3 @@ function getText(identifier, lang) {
     return textsFI[identifier] || 'Default Text, ERROR';
   }
 }
-
-function setButtonText(buttonId, textIdentifier) {
-  const button = document.getElementById(buttonId);
-  if (button) {
-    button.textContent = getText(textIdentifier, lang);
-  } else {
-    console.error(`Button with ID ${buttonId} not found.`);
-  }
-}
