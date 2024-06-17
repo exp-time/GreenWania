@@ -80,8 +80,8 @@ p{margin: 0;}
   bottom: 5%;
 }
 
-.padding-3{font-weight: 900;}
-.padding-2-lb{font-weight: 750;}
+.font-weight-large{font-weight: 900;}
+.font-weight-medium{font-weight: 750;}
 .bold {font-weight: bold;}
 
 .arrows-left {
