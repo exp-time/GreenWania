@@ -14,9 +14,6 @@ p{margin: 0;}
 .content {flex: 1;}
 
 .contrastbtn {border-bottom: 2px solid #f1f1f1!important;}
-
-.padding{padding:8px 16px!important}
-.padding-2-lb{padding: 2%  4%!important; font-weight: 750;}
 .downShadow {box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 .upShadow {box-shadow:0 -4px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 
@@ -78,6 +75,8 @@ p{margin: 0;}
   bottom: 5%;
 }
 
+.bold {font-weight: bold;}
+
 .arrows-left {
   top:45%;
   left:10%;
@@ -94,13 +93,22 @@ p{margin: 0;}
   font-weight:400;
 }
 
-.bold {font-weight: bold;}
+
+.padding-top-bottom{padding: 2px 0px!important;} /* top and bottom | left and right */
 .padding-3{font-weight: 900;}
 .padding-2-lb{font-weight: 750;}
+.padding{padding:8px 16px!important}
 .logoimg {
   left:2%;
   vertical-align: middle;
   height: auto;  /* Keeps the aspect ratio of the image */
+}
+
+
+
+
+.footer-section > div {
+  padding: 10px 10px; 
 }
 
 /* Base font sizes for very small screens */
@@ -314,7 +322,6 @@ p{margin: 0;}
 }
 
 .footer-section > div {
-  padding: 10px 10px; 
   display: flex;
   align-items: center;
   justify-content: center;
