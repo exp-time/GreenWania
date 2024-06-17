@@ -14,8 +14,10 @@ p{margin: 0;}
 
 .dark-green{color:#f1f1f1 !important;background-color:#0c4d09!important}       /* Button Theme*/
 .dark-green:hover{color:#c7c6c6!important;background-color:#48bd44!important}  /* Button Hover Theme*/
+.theme-bg {color:#000000!important;background-color:#f1f1f1 !important}        /* Main Background color*/
 
-.theme-bg {color:#000000!important;background-color:#f1f1f1 !important}       /* Main Background color*/
+::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     
+::-webkit-scrollbar-thumb:hover {background: #48bd44;} 
 
 .content {flex: 1;}
 
@@ -232,6 +234,7 @@ p{margin: 0;}
   padding:0;
   outline:0;
   width:70%;
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
 }
 
 .modal-animate-top{
@@ -240,7 +243,6 @@ p{margin: 0;}
   }@keyframes animatetop{
     from{top:-500px;opacity:0} to{top:10%;opacity:1}}
 
-.card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 
 .lang-btns {
   z-index: 101;
@@ -300,8 +302,7 @@ p{margin: 0;}
 
 ::-webkit-scrollbar {width: 10px;}                    
 ::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
-::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     
-::-webkit-scrollbar-thumb:hover {background: #48bd44;} 
+
 
 .button,.user-select-none{
   -webkit-touch-callout:none;
