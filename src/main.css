@@ -337,7 +337,7 @@ p{margin: 0;}
 .footer-right {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: end;
 }
 
 .button-margin {
