@@ -116,7 +116,7 @@ p{margin: 0;}
 
 .modal-footer,.modal-header{padding: 2%;}
 .sidebar-header{padding: 4%;}
-.padding-3{padding: 3%  6%!important;}
+.padding-3{padding: 2%  4%!important;}
 .padding-2-lb{padding: 2%  4%!important;}
 .footer-section > div {padding: 1vw 1vw;}
 
@@ -138,7 +138,7 @@ p{margin: 0;}
   .font-mega { font-size: 5.5vw!important; }
   .modal-footer,.modal-header{padding: 1%;}
   .sidebar-header{padding: 2%;}
-  .padding-3 {padding: 1.5%  3%!important;}
+  .padding-3 {padding: 1%  2%!important;}
   .padding-2-lb{padding: 1%  2%!important;}
   .btn-container2 {width: 5vw; height: 5vw!important;}
 }
