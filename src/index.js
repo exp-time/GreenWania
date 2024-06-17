@@ -37,7 +37,7 @@ function createFooter(content) {
   return footer
 }
 
-function createModal(id, title, content, footerContent, lang) {
+function createModal(id, title, content, footerContent) {
   let modalContent;
   if (id === "contact_modal") {
     modalContent = new Elem({
