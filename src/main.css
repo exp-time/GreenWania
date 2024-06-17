@@ -88,7 +88,7 @@ p{margin: 0;}
 /* Adjust the position of the arrow characters */
 .arrows-right div, .arrows-left div {
   position: relative;
-  top: -0.14em; /* Adjust this value as needed to nudge the arrow upwards */
+  top: -0.13em; /* Adjust this value as needed to nudge the arrow upwards */
 }
 
 .topBtn {
