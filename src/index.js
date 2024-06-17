@@ -173,7 +173,7 @@ function createNav(lang) {
   navElem.innerHTML = ''
   let tabs = getText('tabs', lang)
   for (const [key, value] of Object.entries(tabs)) {
-    new Elem({tag: 'button', attrs: {id: key, className: 'button font-large dark-green padding-3 corner-top', textContent: value, onclick:()=>changeTab(key)}, parent: navElem});
+    new Elem({tag: 'button', attrs: {id: key, className: 'button font-large dark-green font-weight-medium padding-3 corner-top', textContent: value, onclick:()=>changeTab(key)}, parent: navElem});
   }
 }
 
