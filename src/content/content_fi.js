@@ -31,7 +31,7 @@ const textsFI = {
   '#company' :'Yritys',
   '#message' :'Viesti',
   '#contactBy' :'Ota yhteyttä:',
-  '#' :'',
+  '#submitButton': 'Lähetä',
   '#' :'',
   '#' :'',
   '#' :'',

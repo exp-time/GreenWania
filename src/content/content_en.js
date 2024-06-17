@@ -31,7 +31,7 @@ const textsEN = {
   '#company' :'Company',
   '#message' :'Message',
   '#contactBy' :'Contact Preference:',
-  '#' :'',
+  '#submitButton': 'Submit',
   '#' :'',
   '#' :'',
   '#' :'',
