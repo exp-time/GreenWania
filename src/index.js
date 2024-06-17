@@ -133,7 +133,7 @@ function createBackToTopButton() {
 
 // Function to remove the "back to top" button
 function removeBackToTopButton() {
-  const button = document.querySelector('.btn-container2');
+  const button = document.querySelector('.btn-container2 topBtn');
   if (button) {
     button.remove();
   }
@@ -203,8 +203,8 @@ function changeTab(tab, init) {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
   } else if (currentTab === "tabFour") {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      {tag: 'a', attrs: {className: "button dark-grey font-jumbo arrows-left", onclick:()=>plusDivs(-1), textContent: "<"}},
-      {tag: 'a', attrs: {className: "button dark-grey font-jumbo arrows-right", onclick:()=>plusDivs(+1), textContent: ">"}},
+      {tag: 'div', attrs: {className: "button dark-grey font-xxxlarge arrows-left btn-container2", onclick:()=>plusDivs(-1), textContent: "<"}},
+      {tag: 'div', attrs: {className: "button dark-grey font-xxxlarge arrows-right btn-container2", onclick:()=>plusDivs(+1), textContent: ">"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}}

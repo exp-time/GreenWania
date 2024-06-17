@@ -69,14 +69,17 @@ p{margin: 0;}
 .btn-container2 {
   position: fixed;
   z-index: 101;
-  right: 1%; 
-  bottom: 5%;
   display: flex !important;
   text-align: center;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
   width: 10vw; height: 10vw!important;
+}
+
+.topBtn {
+  right: 1%; 
+  bottom: 5%;
 }
 
 .arrows-left {
