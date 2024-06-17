@@ -18,18 +18,18 @@ function makeDocumentModal(id, content) {
 }
 
 function headerWithClose(id, title, style) {
-  return new Elem({tag:'header',attrs:{className:`theme-l1 padding-3 ${style}`},children:[
+  return new Elem({tag:'header',attrs:{className:`theme-header padding-3 ${style}`},children:[
     {tag:'p',attrs:{textContent:title}},
-    {tag:'div',attrs:{className:'button display-topright button-extra', onclick:()=>info_close(id)},children:[
+    {tag:'div',attrs:{className:'button display-topright dark-green', onclick:()=>info_close(id)},children:[
       { tag: 'span', attrs: { className:'bold', textContent: 'X' } }]}]}).elem;
 }
 
 function createFooter(content) {
-  const footer = new Elem({tag: 'footer', attrs: {className: 'theme-l1 modal-footer font-medium'}}).elem;
+  const footer = new Elem({tag: 'footer', attrs: {className: 'theme-header modal-footer font-medium'}}).elem;
   if (typeof content === 'object' && !(content instanceof Array)) {
     for (const key in content) { // If footerContent is an object (not an array), handle as key-value pairs for links
       new Elem({tag: 'p', attrs: {className: 'font-medium'}, children:[
-        {tag:'a',attrs:{className:'button padding-top-bottom button-extra',textContent: key,
+        {tag:'a',attrs:{className:'button padding-top-bottom dark-green',textContent: key,
           onclick: () => openInNewTab(footerContent[key])}}], parent: footer});
     }
   } 

@@ -9,14 +9,14 @@ html,body {
 
 p{margin: 0;}
 
-.theme {color:#ffffff !important; background-color:#3b961f !important;}
-.theme-l1 {color:#ffffff !important; background-color:#0c4d09 !important}
-.dark-grey{color:#ffffff!important;background-color:#616161!important}
-.dark-grey:hover{color:#000000!important;background-color:#f1f1f1!important}
-.dark-green{color:#ffffff!important;background-color:#0c4d09!important}
-.dark-green:hover{color:#c7c6c6!important;background-color:#48bd44!important}
-.theme-bg {color:#000000!important;background-color:#f1f1f1 !important}
-.theme-bg-hover:hover { background-color:#aaaaaa !important}
+.theme-main {color:#f1f1f1  !important; background-color:#3b961f !important;}  /* Main Color */
+.theme-header {color:#f1f1f1  !important; background-color:#0c4d09 !important} /* Modal Header and footer theme*/
+
+.dark-green{color:#f1f1f1 !important;background-color:#0c4d09!important}       /* Button Theme*/
+.dark-green:hover{color:#c7c6c6!important;background-color:#48bd44!important}  /* Button Hover Theme*/
+
+.theme-bg {color:#000000!important;background-color:#f1f1f1 !important}       /* Main Background color*/
+
 
 .content {flex: 1;}
 
@@ -197,7 +197,7 @@ p{margin: 0;}
   cursor:pointer;
   white-space:nowrap}
   
-.button-extra:hover{color:#000!important;background-color:#ccc!important;} 
+
 
 .centerimg{
   display: block;
