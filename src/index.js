@@ -203,8 +203,8 @@ function changeTab(tab, init) {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
   } else if (currentTab === "tabFour") {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      {tag: 'a', attrs: {className: "button dark-grey font-jumbo", style:"position:absolute;top:45%;left:10%;", onclick:()=>plusDivs(-1), textContent: "<"}},
-      {tag: 'a', attrs: {className: "button dark-grey font-jumbo", style:"position:absolute;top:45%;right:10%;", onclick:()=>plusDivs(+1), textContent: ">"}},
+      {tag: 'a', attrs: {className: "button dark-grey font-jumbo arrows", onclick:()=>plusDivs(-1), textContent: "<"}},
+      {tag: 'a', attrs: {className: "button dark-grey font-jumbo arrows", onclick:()=>plusDivs(+1), textContent: ">"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}}
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
   createLangButtons();
   changeLang(lang);
   checkScroll();
-  
+
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
