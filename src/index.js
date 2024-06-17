@@ -45,7 +45,7 @@ function createModal(id, title, content, footerContent) {
       children: [
         headerWithClose(id, title, "modal-header font-xlarge"),
         {
-          tag: 'form', attrs: { className: 'contact-form padding-3' }, children: [
+          tag: 'form', attrs: { className: 'contact-form padding-3 font-weight-large' }, children: [
             { tag: 'div', attrs: { className: "font-xlarge", textContent: "Currently not functional!" } },
             {
               tag: 'div', attrs: { className: 'form-row' }, children: [
@@ -65,7 +65,7 @@ function createModal(id, title, content, footerContent) {
               ]
             },
             { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
-            { tag: 'p', attrs: { textContent: getText('#contactBy', lang) } },
+            { tag: 'p', attrs: { className: 'font-weight-large', textContent: getText('#contactBy', lang) } },
             {
               tag: 'div', attrs: { className: 'form-row-radio' }, children: [
                 { tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
