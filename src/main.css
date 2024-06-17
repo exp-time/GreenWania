@@ -107,7 +107,7 @@ p{margin: 0;}
 /* Base font sizes for very small screens */
 .font-small { font-size: 10px!important; }  /* Minimum readable size */
 .font-medium { font-size: 12px!important; }
-.font-large { font-size: 14px!important; }
+.font-large { font-size: 12px!important; }
 .font-xlarge { font-size: 16px!important; }
 .font-xxlarge { font-size: 20px!important; }
 .font-xxxlarge { font-size: 24px!important; }
