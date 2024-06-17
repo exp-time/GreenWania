@@ -159,7 +159,7 @@ function genContent(parentELement, content, tag, classList) {
   } else if (typeof content === 'object') { 
     for (const [key, value] of Object.entries(content)) { 
       if (tag === "button") {
-        new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value, onclick:()=>changeTab(key)}, parent: parentELement});
+        
       }
       else {
         new Elem({tag: tag, attrs: {id: key, className: classList,textContent: value}, parent: parentELement});
@@ -171,8 +171,10 @@ function genContent(parentELement, content, tag, classList) {
 function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
-  console.log(getText('tabs', lang))
-
+  let tabs = getText('tabs', lang)
+  for (const [key, value] of Object.entries(tabs)) {
+    new Elem({tag: 'button', attrs: {id: key, className: 'button font-large dark-green padding-3 corner-top', textContent: value, onclick:()=>changeTab(key)}, parent: navElem});
+  }
 }
 
 function changeTab(tab, init) {
