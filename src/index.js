@@ -105,8 +105,8 @@ function footerContents(lang) {
       { tag: 'p', attrs: { className: 'font-large font-weight-smaller padding-top-bottom', textContent: getText('#info3', lang) } }
     ]}),
     new Elem({tag: 'div', attrs: { className: 'footer-section' }, children: [
-      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin padding-3{', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
-      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin padding-3{', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
+      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin padding-3 box-shadow', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
+      { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin padding-3 box-shadow', textContent: getText('#aboutBTN', lang), onclick: () => info_open('about_modal') } }
     ]}),
     new Elem({tag: 'div', attrs: { className: 'footer-right' }, children: [
       { tag: 'p', attrs: { className: 'font-large', innerHTML: '&copy; 2024 Paceville Oy. All rights reserved.' } }
@@ -117,7 +117,7 @@ function footerContents(lang) {
 // Function to create the "back to top" button
 function createBackToTopButton() {
   if (!document.querySelector('.topBtn')) {
-    new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2 topBtn',
+    new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2 box-shadow topBtn',
     onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, children:[
       {tag: 'div', attrs: {innerHTML: '&mapstoup;'}}], parent:document.body});
   }
@@ -178,9 +178,9 @@ function changeTab(tab, init) {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
   } else if (currentTab === "tabFour") {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2", onclick:()=>plusDivs(-1)}, children:[
+      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
         {tag: 'div', attrs: {innerHTML: '&larr;'}}]},
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2", onclick:()=>plusDivs(+1)}, children:[
+      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
         {tag: 'div', attrs: {innerHTML: '&rarr;'}}]},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
