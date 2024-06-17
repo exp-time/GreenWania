@@ -1,5 +1,12 @@
 
-html,body {display:flex;margin:0;font-family: Arial, sans-serif;height: 100%; flex-direction: column;}
+html,body {
+  display:flex;
+  margin:0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  flex-direction: column;
+}
+
 p{margin: 0;}
 
 .theme {color:#ffffff !important; background-color:#3b961f !important;}
