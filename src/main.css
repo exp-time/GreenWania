@@ -17,7 +17,6 @@ p{margin: 0;}
 
 .theme-bg {color:#000000!important;background-color:#f1f1f1 !important}       /* Main Background color*/
 
-
 .content {flex: 1;}
 
 .contrastbtn {border-bottom: 2px solid #f1f1f1!important;}
@@ -229,11 +228,11 @@ p{margin: 0;}
 .modal-content{
   margin:auto;
   top:10%;
-  background-color:#fff;
   position:relative;
   padding:0;
   outline:0;
-  width:70%;}
+  width:70%;
+}
 
 .modal-animate-top{
     position:relative;
