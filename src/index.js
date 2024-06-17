@@ -52,7 +52,7 @@ function createModal(id, title, content, footerContent) {
           },
           {tag: 'div', attrs: { className: 'form-row' }, children: [
             { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: getText('#email', lang) + "*", required: true, className: 'form-input' } },
-            { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum', lang), className: 'form-input' } },]
+            { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum', lang), className: 'form-input', inputmode: 'numeric'} },]
           },
           {tag: 'div', attrs: { className: 'form-row' }, children: [
             { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: getText('#company', lang), className: 'form-input' } },]
