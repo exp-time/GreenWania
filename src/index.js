@@ -125,7 +125,7 @@ function footerContents(lang) {
 // Function to create the "back to top" button
 function createBackToTopButton() {
   if (!document.querySelector('.btn-container2')) {
-    new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2',
+    new Elem({tag: 'div', attrs: {className: 'button font-xxlarge dark-green corner-all btn-container2 topBtn',
     onclick: () => window.scrollTo({top: 0, behavior: 'smooth'})}, children:[
       {tag: 'div', attrs: {innerHTML: '&mapstoup;'}}], parent:document.body});
   }
@@ -133,7 +133,7 @@ function createBackToTopButton() {
 
 // Function to remove the "back to top" button
 function removeBackToTopButton() {
-  const button = document.querySelector('.btn-container2 topBtn');
+  const button = document.querySelector('.topBtn');
   if (button) {
     button.remove();
   }
