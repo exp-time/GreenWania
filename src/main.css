@@ -108,7 +108,7 @@ p{margin: 0;}
   font-weight:400;
 }
 
-.padding{padding:8px 16px!important} /* Title, modal textcontent */
+.padding{padding:8px 16px!important} /* Title */
 .padding-top-bottom{padding: 2px 0px!important;} /* top and bottom | left and right */
 
 /* Base font sizes for very small screens */
