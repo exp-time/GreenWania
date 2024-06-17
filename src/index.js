@@ -171,11 +171,8 @@ function genContent(parentELement, content, tag, classList) {
 function createNav(lang) {
   let navElem = document.getElementById('navbar')
   navElem.innerHTML = ''
-  if (lang === "en") {
-    genContent(navElem, tabsEN, 'button', 'button font-large dark-green padding-3 corner-top');
-  } else if (lang === "fi") {
-    genContent(navElem, tabsFI, 'button', 'button font-large dark-green padding-3 corner-top')
-  }
+  console.log(getText('tabs', lang))
+
 }
 
 function changeTab(tab, init) {
