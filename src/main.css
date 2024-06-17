@@ -4,37 +4,23 @@ p{margin: 0;}
 
 .theme {color:#ffffff !important; background-color:#3b961f !important;}
 .theme-l1 {color:#ffffff !important; background-color:#0c4d09 !important}
-
 .dark-grey{color:#ffffff!important;background-color:#616161!important}
 .dark-grey:hover{color:#000000!important;background-color:#f1f1f1!important}
-
 .dark-green{color:#ffffff!important;background-color:#0c4d09!important}
 .dark-green:hover{color:#c7c6c6!important;background-color:#48bd44!important}
-
 .theme-bg {color:#000000!important;background-color:#f1f1f1 !important}
 .theme-bg-hover:hover { background-color:#aaaaaa !important}
 
-/* Not used */
-.theme-light {color:#000000 !important; background-color:#f0f0f0 !important}
-.tooltip {position: relative;font-size:12px;}
-.tooltip:hover .textb{display:block;}
-/* Not used */
-
 .content {flex: 1;}
 
-.contrastbtn {
-  border-bottom: 2px solid #f1f1f1!important;
-}
+.contrastbtn {border-bottom: 2px solid #f1f1f1!important;}
 
 .padding{padding:8px 16px!important}
 .padding-2-lb{padding: 2%  4%!important; font-weight: 750;}
 .downShadow {box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 .upShadow {box-shadow:0 -4px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
 
-.border-bottom {
-  border-bottom: 2px solid white;
-}
-
+.border-bottom {border-bottom: 2px solid white;}
 .center{text-align:center!important}
 
 .title-class {
@@ -52,13 +38,9 @@ p{margin: 0;}
   border-radius: 5px 5px 5px 5px; /* top-left | top-right | bottom-right | bottom-left */
 }
 
-.corner-all {
-  border-radius: 5%;
-}
+.corner-all {border-radius: 5%;}
 
-.corner-top {
-  border-radius: 8px 8px 0px 0px; /* top-left | top-right | bottom-right | bottom-left */
-}
+.corner-top {border-radius: 8px 8px 0px 0px;} /* top-left | top-right | bottom-right | bottom-left */
 
 .btn-container{
   position:absolute;
@@ -112,10 +94,7 @@ p{margin: 0;}
   font-weight:400;
 }
 
-.bold {
-  font-weight: bold;
-}
-
+.bold {font-weight: bold;}
 .padding-3{font-weight: 900;}
 .padding-2-lb{font-weight: 750;}
 .logoimg {
@@ -193,13 +172,6 @@ p{margin: 0;}
   .padding-2-lb{padding: 0.5%  1%!important;}
   .btn-container2 {width: 2.5vw; height: 2.5vw!important;}
 }
-
-  
-.animate-bottom{
-  position:relative;
-  animation:animatebottom 0.6s
-}@keyframes animatebottom{
-  from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 
 .button{
   display:inline-block;
@@ -362,3 +334,9 @@ p{margin: 0;}
 .button-margin {
   margin: 0 10px;
 }
+
+.animate-bottom{
+  position:relative;
+  animation:animatebottom 0.6s
+}@keyframes animatebottom{
+  from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
