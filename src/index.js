@@ -141,7 +141,6 @@ function checkScroll() {
 
 function createLangButtons() {
   const buttonContainer = document.getElementById('button-container');
-  // Image URLs (replace with your actual image paths)
   const images = [
     { src: 'src/img/en.png', lang: 'en' },
     { src: 'src/img/fi.png', lang: 'fi' }
@@ -164,9 +163,9 @@ function createNav(lang) {
 
 function changeTab(tab, init) {
   if (currentTab === tab && !init) {return}
-  document.getElementById(currentTab).className = "button corner-top font-large dark-green padding-3"
+  document.getElementById(currentTab).className = "button corner-top font-large font-weight-medium dark-green padding-3"
   currentTab = tab
-  document.getElementById(currentTab).className = "button corner-top font-large theme-bg contrastbtn padding-3"
+  document.getElementById(currentTab).className = "button corner-top font-large font-weight-medium theme-bg contrastbtn padding-3"
   var tabs = document.getElementsByClassName("navbar");
   const contentContainer = document.getElementById('content');
   contentContainer.innerHTML = ''
