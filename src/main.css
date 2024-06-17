@@ -83,13 +83,11 @@ p{margin: 0;}
 }
 
 .arrows-left {
-  position:absolute;
   top:45%;
   left:10%;
 }
 
 .arrows-right {
-  position:absolute;
   top:45%;
   right:10%;
 }
