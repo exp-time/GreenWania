@@ -18,6 +18,7 @@ p{margin: 0;}
 
 ::-webkit-scrollbar-thumb {background: #0c4d09;border-radius: 20px;}     
 ::-webkit-scrollbar-thumb:hover {background: #48bd44;} 
+::-webkit-scrollbar-track {-webkit-box-shadow: none;background:#f1f1f1}        
 
 .content {flex: 1;}
 
@@ -122,7 +123,6 @@ p{margin: 0;}
 .font-xxxlarge { font-size: 24px!important; }
 .font-jumbo { font-size: 28px!important; }
 .font-mega { font-size: 36px!important; }
-
 .modal-footer,.modal-header{padding: 2%;}
 .sidebar-header{padding: 4%;}
 .padding-3{padding: 2%  4%!important;}
@@ -302,7 +302,7 @@ p{margin: 0;}
 }
 
 ::-webkit-scrollbar {width: 10px;}                    
-::-webkit-scrollbar-track {-webkit-box-shadow: none;}                 
+         
 
 .button,.user-select-none{
   -webkit-touch-callout:none;
