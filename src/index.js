@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
   createLangButtons();
   changeLang(lang);
   checkScroll();
-
+  
   /* REMOVE */
   document.getElementById('unfinished_modal').style.display='block'
   /* REMOVE */
