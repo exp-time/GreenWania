@@ -99,9 +99,9 @@ function footerContents(lang) {
   footer.innerHTML = ''
   new Elem({ tag: 'div', attrs: { className: 'footer-container user-select-none padding-2-lb' }, children: [
     new Elem({ tag: 'div', attrs: { className: 'footer-left' }, children: [
-      { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info1', lang) } },
-      { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info2', lang) } },
-      { tag: 'p', attrs: { className: 'font-large', textContent: getText('#info3', lang) } }
+      { tag: 'p', attrs: { className: 'font-large font-weight-smaller', textContent: getText('#info1', lang) } },
+      { tag: 'p', attrs: { className: 'font-large font-weight-smaller', textContent: getText('#info2', lang) } },
+      { tag: 'p', attrs: { className: 'font-large font-weight-smaller', textContent: getText('#info3', lang) } }
     ]}),
     new Elem({tag: 'div', attrs: { className: 'footer-section' }, children: [
       { tag: 'div', attrs: { className: 'button font-xlarge dark-green button-margin padding-3{', textContent: getText('#contactBTN', lang), onclick: () => info_open('contact_modal') } },
