@@ -60,7 +60,7 @@ function createModal(id, title, content, footerContent) {
           },
           {tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
           {tag: 'p', attrs: { className: 'font-weight-large', textContent: getText('#contactBy', lang) } },
-          {tag: 'div', attrs: { className: 'form-row-radio font-medium' }, children: [
+          {tag: 'div', attrs: { className: 'form-row-radio font-large' }, children: [
             {tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
             {tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio', checked: true } },
             {tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone', lang), className: 'form-label' } },
