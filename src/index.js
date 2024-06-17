@@ -66,7 +66,7 @@ function createModal(id, title, content, footerContent) {
             {tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone', lang), className: 'form-label' } },
             {tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },]
           },
-          {tag: 'input', attrs: { type: "submit", className: "button dark-green" }}
+          {tag: 'input', attrs: { type: "submit", className: "button dark-green" , textContent: getText('#contactBy', lang)}}
           ]
         }
       ]
