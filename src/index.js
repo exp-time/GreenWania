@@ -44,37 +44,28 @@ function createModal(id, title, content, footerContent) {
       tag: 'div', attrs: { className: 'modal-content card-4 modal-animate-top' },
       children: [
         headerWithClose(id, title, "modal-header font-xlarge"),
-        {
-          tag: 'form', attrs: { className: 'contact-form padding-3 font-weight-large' }, children: [
-            { tag: 'div', attrs: { className: "font-xlarge", textContent: "Currently not functional!" } },
-            {
-              tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "text", id: 'fName', name: "fName", placeholder: getText('#fName', lang) + "*", required: true, className: 'form-input' } },
-                { tag: 'input', attrs: { type: "text", id: 'lName', name: "lName", placeholder: getText('#lName', lang) + "*", required: true, className: 'form-input' } }
-              ]
-            },
-            {
-              tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: getText('#email', lang) + "*", required: true, className: 'form-input' } },
-                { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum', lang), className: 'form-input' } }
-              ]
-            },
-            {
-              tag: 'div', attrs: { className: 'form-row' }, children: [
-                { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: getText('#company', lang), className: 'form-input' } },
-              ]
-            },
-            { tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
-            { tag: 'p', attrs: { className: 'font-weight-large', textContent: getText('#contactBy', lang) } },
-            {
-              tag: 'div', attrs: { className: 'form-row-radio' }, children: [
-                { tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
-                { tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio', checked: true } },
-                { tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone', lang), className: 'form-label' } },
-                { tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },
-              ]
-            },
-            { tag: 'input', attrs: { type: "submit", className: "button dark-green" } }
+        {tag: 'form', attrs: { className: 'contact-form padding-3 font-weight-large' }, children: [
+          {tag: 'div', attrs: { className: "font-xlarge", textContent: "Currently not functional!" } },
+          {tag: 'div', attrs: { className: 'form-row' }, children: [
+            {tag: 'input', attrs: { type: "text", id: 'fName', name: "fName", placeholder: getText('#fName', lang) + "*", required: true, className: 'form-input' } },
+            {tag: 'input', attrs: { type: "text", id: 'lName', name: "lName", placeholder: getText('#lName', lang) + "*", required: true, className: 'form-input' } },]
+          },
+          {tag: 'div', attrs: { className: 'form-row' }, children: [
+            { tag: 'input', attrs: { type: "email", id: 'email', name: "email", placeholder: getText('#email', lang) + "*", required: true, className: 'form-input' } },
+            { tag: 'input', attrs: { type: "number", id: 'phone', name: "phone", placeholder: getText('#phoneNum', lang), className: 'form-input' } },]
+          },
+          {tag: 'div', attrs: { className: 'form-row' }, children: [
+            { tag: 'input', attrs: { type: "text", id: 'company', name: "company", placeholder: getText('#company', lang), className: 'form-input' } },]
+          },
+          {tag: 'textarea', attrs: { id: 'message', name: "message", placeholder: getText('#message', lang) + "*", required: true, className: 'form-textarea', rows: 12 } },
+          {tag: 'p', attrs: { className: 'font-weight-large', textContent: getText('#contactBy', lang) } },
+          {tag: 'div', attrs: { className: 'form-row-radio' }, children: [
+            {tag: 'label', attrs: { for: "byEmail", textContent: getText('#email', lang), className: 'form-label' } },
+            {tag: 'input', attrs: { type: "radio", id: 'byEmail', name: "contactBy", className: 'form-radio', checked: true } },
+            {tag: 'label', attrs: { for: "byPhone", textContent: getText('#phone', lang), className: 'form-label' } },
+            {tag: 'input', attrs: { type: "radio", id: 'byPhone', name: "contactBy", className: 'form-radio' } },]
+          },
+          {tag: 'input', attrs: { type: "submit", className: "button dark-green" }}
           ]
         }
       ]
