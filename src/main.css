@@ -270,7 +270,6 @@ p{margin: 0;}
 .form-input {
   flex: 1;
   padding: 0.5em;
-  font-size: 1em;
 }
 
 .form-row {
@@ -285,12 +284,10 @@ p{margin: 0;}
 
 .form-textarea {
   padding: 0.5em;
-  font-size: 1em;
 }
 
 .form-label {
   margin-right: 0.5em;
-  font-size: 1em;
 }
 
 .form-radio {
