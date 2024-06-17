@@ -70,6 +70,12 @@ p{margin: 0;}
   top: -0.13em; /* Adjust this value as needed to nudge the arrow upwards */
 }
 
+.logoimg {
+  left:2%;
+  vertical-align: middle;
+  height: auto;  /* Keeps the aspect ratio of the image */
+}
+
 .topBtn {
   right: 1%; 
   bottom: 5%;
@@ -93,22 +99,15 @@ p{margin: 0;}
   font-weight:400;
 }
 
-
+.padding{padding:8px 16px!important} /* Title, modal textcontent */
 .padding-top-bottom{padding: 2px 0px!important;} /* top and bottom | left and right */
+
+
+
 .padding-3{font-weight: 900;}
 .padding-2-lb{font-weight: 750;}
-.padding{padding:8px 16px!important}
-.logoimg {
-  left:2%;
-  vertical-align: middle;
-  height: auto;  /* Keeps the aspect ratio of the image */
-}
-
-
-
-
 .footer-section > div {
-  padding: 10px 10px; 
+  padding: 0.5vw 0.5vw; 
 }
 
 /* Base font sizes for very small screens */
