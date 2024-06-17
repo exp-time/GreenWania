@@ -25,7 +25,7 @@ const textsFI = {
   '#submitBTN' :'Submit',
   '#fName' :'Etunimi',
   '#lName' :'Sukunimi',
-  '#email' :'Sähköpostiosoite',
+  '#email' :'Sähköposti',
   '#phoneNum' :'Puhelinnumero',
   '#phone' :'Puhelin',
   '#company' :'Yritys',
