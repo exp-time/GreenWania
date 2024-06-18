@@ -217,6 +217,7 @@ p{margin: 0;}
 .pdf {
   max-width: 80%;
   width: 80%;
+  height: 800px;
   height: auto;
   display: block;
   margin-left: auto;
