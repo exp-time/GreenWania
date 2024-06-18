@@ -46,7 +46,7 @@ const textsEN = {
   'tabs' : {
     'tabOne': 'Picture One',
     'tabTwo': 'Picture Two',
-    'tabThree': 'Picture Three',
+    'tabThree': 'PPower',
     'tabFour': 'GPOWER-B',
     'tabFive': 'UApower',
   }

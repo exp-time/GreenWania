@@ -46,10 +46,10 @@ const textsFI = {
   'tabs' : {
     'tabOne': 'Kuva Yksi',
     'tabTwo': 'Kuva Kaksi',
-    'tabThree': 'Kuva Kolme',
+    'tabThree': 'PPower',
     'tabFour': 'GPOWER-B',
     'tabFive': 'UApower',
-    
+
   }
 };
 
