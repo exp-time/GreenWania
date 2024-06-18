@@ -48,6 +48,8 @@ const textsFI = {
     'tabTwo': 'Kuva Kaksi',
     'tabThree': 'Kuva Kolme',
     'tabFour': 'GPOWER-B',
+    'tabFive': 'UApower',
+    
   }
 };
 

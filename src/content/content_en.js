@@ -48,5 +48,6 @@ const textsEN = {
     'tabTwo': 'Picture Two',
     'tabThree': 'Picture Three',
     'tabFour': 'GPOWER-B',
+    'tabFive': 'UApower',
   }
 };
