@@ -186,7 +186,7 @@ function changeTab(tab, init) {
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}}
     ], parent: contentContainer});
-    showDivs(1);
+    showDivs(1, 'mySlides');
   }
   else if (currentTab === "tabFive") {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
@@ -198,7 +198,7 @@ function changeTab(tab, init) {
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.299.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.301.png"}}
     ], parent: contentContainer});
-    showDivs(1);
+    showDivs(1, 'mySlides');
   }
 }
 
@@ -208,8 +208,8 @@ function plusDivs(n) {
   showDivs(slideIndex);
 }
 
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
+function showDivs(n, target) {
+  var x = document.getElementsByClassName(target);
   console.log(x)
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length} ;
