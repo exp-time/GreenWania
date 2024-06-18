@@ -2,7 +2,7 @@ let isString = value => typeof value === 'string';
 
 let lang = "en"
 let currentTab = "tabOne"
-var slideIndex = 1
+var slideIndex = 1;
 
 function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
@@ -211,13 +211,14 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  var x = document.getElementsByClassName(target);
+  var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) { x[i].style.display = "none" }
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
   x[slideIndex-1].style.display = "block";  
 }
-
 
 window.addEventListener('scroll', checkScroll);
 
