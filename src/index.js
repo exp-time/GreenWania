@@ -208,7 +208,7 @@ function changeTab(tab, init) {
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.296.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.299.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.301.png"}},
-      {tag: 'iframe', attrs: {className: "mySlides pdf", width:"800", height:"500", data: "src/img/products/UApower/UApower wall 48v 15s powerwall battery pack V2-0.pdf"}}
+      {tag: 'iframe', attrs: {className: "mySlides pdf", width:"800", height:"500", src: "src/img/products/UApower/UApower wall 48v 15s powerwall battery pack V2-0.pdf"}}
     ], parent: contentContainer});
     showDivs(1);
   }
