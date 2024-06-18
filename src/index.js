@@ -2,7 +2,7 @@ let isString = value => typeof value === 'string';
 
 let lang = "en"
 let currentTab = "tabOne"
-var slideIndex = 1;
+var slideIndex = 1
 
 function info_open(id) {document.getElementById(id).style.display = "block"}
 function info_close(id) {document.getElementById(id).style.display = "none"}
@@ -177,6 +177,7 @@ function changeTab(tab, init) {
   } else if (currentTab === "tabThree") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_3.jpeg", style: "width: 25%;"}, parent: contentContainer});
   } else if (currentTab === "tabFour") {
+    slideIndex = 1
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
       {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
         {tag: 'div', attrs: {innerHTML: '&larr;'}}]},
@@ -186,19 +187,20 @@ function changeTab(tab, init) {
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}}
     ], parent: contentContainer});
-    showDivs(1, 'mySlides');
+    showDivs(1);
   }
   else if (currentTab === "tabFive") {
+    slideIndex = 1
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
       {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
         {tag: 'div', attrs: {innerHTML: '&larr;'}}]},
       {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
         {tag: 'div', attrs: {innerHTML: '&rarr;'}}]},
-      {tag: 'img', attrs: {className: "mySlides2 img-max",src: "src/img/products/UApower/APower.296.png"}},
-      {tag: 'img', attrs: {className: "mySlides2 img-max",src: "src/img/products/UApower/APower.299.png"}},
-      {tag: 'img', attrs: {className: "mySlides2 img-max",src: "src/img/products/UApower/APower.301.png"}}
+      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.296.png"}},
+      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.299.png"}},
+      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.301.png"}}
     ], parent: contentContainer});
-    showDivs(1, 'mySlides');
+    showDivs(1);
   }
 }
 
@@ -208,16 +210,14 @@ function plusDivs(n) {
   showDivs(slideIndex);
 }
 
-function showDivs(n, target) {
+function showDivs(n) {
   var x = document.getElementsByClassName(target);
-  console.log(x)
   if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) { x[i].style.display = "none" }
   x[slideIndex-1].style.display = "block";  
 }
+
 
 window.addEventListener('scroll', checkScroll);
 
