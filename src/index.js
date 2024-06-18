@@ -176,7 +176,6 @@ function changeTab(tab, init) {
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
       {tag: 'iframe', attrs: {className: "pdf", src: "src/img/products/Catalogue of UFO POWER 20231115.pdf"}}
     ], parent: contentContainer});
-    new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_1.jpeg"}, parent: contentContainer});
   } else if (currentTab === "tabThree") {
     slideIndex = 1
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
