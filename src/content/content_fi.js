@@ -45,7 +45,7 @@ const textsFI = {
   '#info3' : 'Y-tunnus: 2564882-3',
   'tabs' : {
     'tabOne': 'Kuva Yksi',
-    'tabTwo': 'Kuva Kaksi',
+    'tabTwo': 'Katalogi',
     'tabThree': 'PPower',
     'tabFour': 'GPOWER-B',
     'tabFive': 'UApower',

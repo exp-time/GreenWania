@@ -45,7 +45,7 @@ const textsEN = {
   '#info3' : 'Business ID: 2564882-3',
   'tabs' : {
     'tabOne': 'Picture One',
-    'tabTwo': 'Picture Two',
+    'tabTwo': 'Catalogue',
     'tabThree': 'PPower',
     'tabFour': 'GPOWER-B',
     'tabFive': 'UApower',
