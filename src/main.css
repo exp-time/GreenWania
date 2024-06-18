@@ -214,6 +214,11 @@ p{margin: 0;}
   margin-right: auto;
 }
 
+.pdf {
+  max-width: 80%;
+  aspect-ratio: 4 / 3;
+}
+
 .modal{
   display:none;
   position:fixed;
