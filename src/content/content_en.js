@@ -51,3 +51,17 @@ const textsEN = {
     'tabFive': 'UApower',
   }
 };
+
+const liEN = [
+  'Available kWh: 5.12kWh, 10.24kWh, 15.36kWh, 20.48kWh', 
+  'Suitable for both off-grid and hybrid inverters and protocol match well.',
+  'Communication port: RS232/RS485/CAN',
+  'Energy storage SAAS unified platform available, OTA upgrading and other maintenance function',
+  'Bluetooth/WIFI remotely monitoring system',
+  'Faulty battery module auto isolates to keep system operating Plug and play',
+  'Elegant design, IP65',
+  'Multi-level software and hardware protection',
+  'Cycles: More than 6000 cycle life with 80% DOD',
+  'Design Life >10 years @25℃',
+  'Certificates: Comply with IEC62619, TUV, ROHS, UN38.3, CEI, VDE, MSDS, CE Standard.'
+]

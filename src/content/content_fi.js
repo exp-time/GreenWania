@@ -49,7 +49,19 @@ const textsFI = {
     'tabThree': 'PPower',
     'tabFour': 'GPOWER-B',
     'tabFive': 'UApower',
-
   }
 };
 
+const liFi = [
+  'Saatavilla oleva kWh: 5.12kWh, 10.24kWh, 15.36kWh, 20.48kWh', 
+  'Soveltuu sekä off-grid että hybrid inverttereille ja protokolla sopii hyvin.',
+  'Viestintäportti: RS232/RS485/CAN',
+  'Energian varastointi SAAS yhtenäinen alusta saatavilla, OTA-päivitys ja muut ylläpitotoiminnot',
+  'Bluetooth/WIFI etävalvontajärjestelmä',
+  'Viallinen akkumoduuli eristää itsensä, jotta järjestelmä pysyy toiminnassa Plug and play',
+  'Tyylikäs muotoilu, IP65',
+  'Monitasoinen ohjelmisto- ja laitteistosuojaus',
+  'Kierrokset: Yli 6000 käyttöikää 80% DOD:lla',
+  'Suunniteltu käyttöikä >10 vuotta @25℃',
+  'Sertifikaatit: Täyttää IEC62619, TUV, ROHS, UN38.3, CEI, VDE, MSDS, CE standardin.'
+]
