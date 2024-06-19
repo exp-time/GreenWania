@@ -9,7 +9,7 @@ function info_close(id) {document.getElementById(id).style.display = "none"}
 function openInNewTab(url) {window.open(url, '_blank').focus()}
 
 function closeElem(id, event, elem) { // Close if click outside of modal                     
-  if (event.target.classList.contains(elem)) { document.getElementById(id).style.display = 'none'}
+  if (event.target.classList.contains(elem)) { info_close(id)}
 }
 
 function makeDocumentModal(id, content) {
@@ -172,13 +172,16 @@ function arrows() {
 
 function changeTab(tab, init) {
   if (currentTab === tab && !init) {return}
+
   document.getElementById(currentTab).className = "button corner-top font-large font-weight-medium dark-green padding-3"
   currentTab = tab
   document.getElementById(currentTab).className = "button corner-top font-large font-weight-medium theme-bg contrastbtn padding-3"
+  
   var tabs = document.getElementsByClassName("navbar");
   const contentContainer = document.getElementById('content');
   contentContainer.innerHTML = ''
   const { lArrow, rArrow } = arrows();
+
   if (currentTab === "tabOne") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_2.jpeg"}, parent: contentContainer});
   } else if (currentTab === "tabTwo") {
