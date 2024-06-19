@@ -164,7 +164,7 @@ function createNav(lang) {
 
 function l_r_Arrows() {
   return new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
-    {tag: 'div', attrs: {innerHTML: '&larr;'}}]}).elem , new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
+    {tag: 'div', attrs: {innerHTML: '&larr;'}}]}).elem && new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
     {tag: 'div', attrs: {innerHTML: '&rarr;'}}]}).elem
  }
 
