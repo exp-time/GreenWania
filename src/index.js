@@ -178,6 +178,7 @@ function changeTab(tab, init) {
   var tabs = document.getElementsByClassName("navbar");
   const contentContainer = document.getElementById('content');
   contentContainer.innerHTML = ''
+  const { lArrow, rArrow } = arrows();
   if (currentTab === "tabOne") {
     new Elem({tag: 'img', attrs: {className: "centerimg",src: "src/img/contentIMG/image_2.jpeg"}, parent: contentContainer});
   } else if (currentTab === "tabTwo") {
@@ -186,8 +187,7 @@ function changeTab(tab, init) {
     ], parent: contentContainer});
   } else if (currentTab === "tabThree") {
     slideIndex = 1
-    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      arrows(),
+    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[lArrow, rArrow,
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/PPower/PPower51-2V200AH-320.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/PPower/PPower51-2V200AH-325.png"}},
     ], parent: contentContainer});
