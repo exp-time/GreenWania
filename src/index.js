@@ -194,11 +194,7 @@ function changeTab(tab, init) {
     showDivs(1);
   } else if (currentTab === "tabFour") {
     slideIndex = 1
-    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
-        {tag: 'div', attrs: {innerHTML: '&larr;'}}]},
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
-        {tag: 'div', attrs: {innerHTML: '&rarr;'}}]},
+    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[lArrow, rArrow,
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}},
@@ -223,11 +219,7 @@ function changeTab(tab, init) {
   }
   else if (currentTab === "tabFive") {
     slideIndex = 1
-    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
-        {tag: 'div', attrs: {innerHTML: '&larr;'}}]},
-      {tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
-        {tag: 'div', attrs: {innerHTML: '&rarr;'}}]},
+    new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[lArrow, rArrow,
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.296.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.299.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/UApower/APower.301.png"}},
