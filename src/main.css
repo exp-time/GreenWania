@@ -223,6 +223,12 @@ p{margin: 0;}
   margin-right: auto;
 }
 
+.centercontent {
+  max-width: 80%;
+  width: 80%;
+  display: block;
+}
+
 .modal{
   display:none;
   position:fixed;

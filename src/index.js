@@ -196,7 +196,23 @@ function changeTab(tab, init) {
         {tag: 'div', attrs: {innerHTML: '&rarr;'}}]},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
-      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}}
+      {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}},
+      {tag: 'div', attrs: {className: "mySlides centercontent"}, children:[
+        { tag: 'h1', attrs: { innerText: 'GPOWER-B Low Voltage Stackable System' } },
+        { tag: 'ul', children: [
+          { tag: 'li', attrs: { innerText: 'Available kWh: 5.12kWh, 10.24kWh, 15.36kWh, 20.48kWh' } },
+          { tag: 'li', attrs: { innerText: 'Suitable for both off-grid and hybrid inverters and protocol match well.' } },
+          { tag: 'li', attrs: { innerText: 'Communication port: RS232/RS485/CAN' } },
+          { tag: 'li', attrs: { innerText: 'Energy storage SAAS unified platform available, OTA upgrading and other maintenance function' } },
+          { tag: 'li', attrs: { innerText: 'Bluetooth/WIFI remotely monitoring system' } },
+          { tag: 'li', attrs: { innerText: 'Faulty battery module auto isolates to keep system operating Plug and play' } },
+          { tag: 'li', attrs: { innerText: 'Elegant design, IP65' } },
+          { tag: 'li', attrs: { innerText: 'Multi-level software and hardware protection' } },
+          { tag: 'li', attrs: { innerText: 'Cycles: More than 6000 cycle life with 80% DOD' } },
+          { tag: 'li', attrs: { innerText: 'Design Life >10 years @25℃' } },
+          { tag: 'li', attrs: { innerText: 'Certificates: Comply with IEC62619, TUV, ROHS, UN38.3, CEI, VDE, MSDS, CE Standard.' } },
+        ]}
+      ]}
     ], parent: contentContainer});
     showDivs(1);
   }
