@@ -162,12 +162,13 @@ function createNav(lang) {
   }
 }
 
-function l_r_Arrows() {
-  return new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
-    {tag: 'div', attrs: {innerHTML: '&larr;'}}]}).elem && new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
+function arrows() {
+  let rArrow = new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-right corner-all btn-container2 box-shadow", onclick:()=>plusDivs(+1)}, children:[
     {tag: 'div', attrs: {innerHTML: '&rarr;'}}]}).elem
- }
-
+  let lArrow = new Elem({tag: 'div', attrs: {className: "button dark-green font-xxxlarge arrows-left corner-all btn-container2 box-shadow", onclick:()=>plusDivs(-1)}, children:[
+    {tag: 'div', attrs: {innerHTML: '&larr;'}}]}).elem
+  return  {lArrow, rArrow}
+}
 
 function changeTab(tab, init) {
   if (currentTab === tab && !init) {return}
@@ -186,7 +187,7 @@ function changeTab(tab, init) {
   } else if (currentTab === "tabThree") {
     slideIndex = 1
     new Elem({tag: 'div', attrs: {className: "centerimg"}, children:[
-      l_r_Arrows(),
+      arrows(),
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/PPower/PPower51-2V200AH-320.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/PPower/PPower51-2V200AH-325.png"}},
     ], parent: contentContainer});
