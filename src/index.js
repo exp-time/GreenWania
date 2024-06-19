@@ -197,7 +197,7 @@ function changeTab(tab, init) {
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER140.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER137.png"}},
       {tag: 'img', attrs: {className: "mySlides img-max",src: "src/img/products/G POWER-B/GPOWER142.png"}},
-      {tag: 'div', attrs: {className: "mySlides centercontent"}, children:[
+      {tag: 'div', attrs: {className: "mySlides centercontent user-select-text"}, children:[
         { tag: 'h1', attrs: { innerText: 'GPOWER-B Low Voltage Stackable System' } },
         { tag: 'ul', children: [
           { tag: 'li', attrs: { innerText: 'Available kWh: 5.12kWh, 10.24kWh, 15.36kWh, 20.48kWh' } },
